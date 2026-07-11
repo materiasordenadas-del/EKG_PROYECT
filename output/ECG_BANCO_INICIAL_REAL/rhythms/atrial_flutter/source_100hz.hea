@@ -1,0 +1,13 @@
+source_100hz 12 100 1000
+source_100hz.dat 16 1000.0(0)/mV 16 0 -244 63541 0 I
+source_100hz.dat 16 1000.0(0)/mV 16 0 -301 5713 0 II
+source_100hz.dat 16 1000.0(0)/mV 16 0 -57 7708 0 III
+source_100hz.dat 16 1000.0(0)/mV 16 0 273 63666 0 AVR
+source_100hz.dat 16 1000.0(0)/mV 16 0 -93 60667 0 AVL
+source_100hz.dat 16 1000.0(0)/mV 16 0 -179 6699 0 AVF
+source_100hz.dat 16 1000.0(0)/mV 16 0 146 2803 0 V1
+source_100hz.dat 16 1000.0(0)/mV 16 0 -659 64513 0 V2
+source_100hz.dat 16 1000.0(0)/mV 16 0 -749 62473 0 V3
+source_100hz.dat 16 1000.0(0)/mV 16 0 -681 4651 0 V4
+source_100hz.dat 16 1000.0(0)/mV 16 0 -527 5153 0 V5
+source_100hz.dat 16 1000.0(0)/mV 16 0 -302 6491 0 V6

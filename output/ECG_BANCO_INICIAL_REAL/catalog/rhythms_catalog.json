@@ -1,0 +1,74 @@
+[
+  {
+    "id": "sinus_rhythm",
+    "title": "Ritmo sinusal normal",
+    "targetCode": "NORM",
+    "ecgId": 9073,
+    "sampleRateHz": 100,
+    "durationSeconds": 10.0,
+    "path": "rhythms/sinus_rhythm/signal.json"
+  },
+  {
+    "id": "sinus_bradycardia",
+    "title": "Bradicardia sinusal",
+    "targetCode": "SBRAD",
+    "ecgId": 13696,
+    "sampleRateHz": 100,
+    "durationSeconds": 10.0,
+    "path": "rhythms/sinus_bradycardia/signal.json"
+  },
+  {
+    "id": "sinus_tachycardia",
+    "title": "Taquicardia sinusal",
+    "targetCode": "STACH",
+    "ecgId": 1628,
+    "sampleRateHz": 100,
+    "durationSeconds": 10.0,
+    "path": "rhythms/sinus_tachycardia/signal.json"
+  },
+  {
+    "id": "atrial_fibrillation",
+    "title": "Fibrilación auricular",
+    "targetCode": "AFIB",
+    "ecgId": 8215,
+    "sampleRateHz": 100,
+    "durationSeconds": 10.0,
+    "path": "rhythms/atrial_fibrillation/signal.json"
+  },
+  {
+    "id": "atrial_flutter",
+    "title": "Flutter auricular",
+    "targetCode": "AFLT",
+    "ecgId": 23,
+    "sampleRateHz": 100,
+    "durationSeconds": 10.0,
+    "path": "rhythms/atrial_flutter/signal.json"
+  },
+  {
+    "id": "first_degree_av_block",
+    "title": "Bloqueo AV de primer grado",
+    "targetCode": "1AVB",
+    "ecgId": 9108,
+    "sampleRateHz": 100,
+    "durationSeconds": 10.0,
+    "path": "rhythms/first_degree_av_block/signal.json"
+  },
+  {
+    "id": "third_degree_av_block",
+    "title": "Bloqueo AV completo/de tercer grado",
+    "targetCode": "3AVB",
+    "ecgId": 8620,
+    "sampleRateHz": 100,
+    "durationSeconds": 10.0,
+    "path": "rhythms/third_degree_av_block/signal.json"
+  },
+  {
+    "id": "ventricular_premature_beats",
+    "title": "Extrasístoles ventriculares",
+    "targetCode": "PVC",
+    "ecgId": 9266,
+    "sampleRateHz": 100,
+    "durationSeconds": 10.0,
+    "path": "rhythms/ventricular_premature_beats/signal.json"
+  }
+]

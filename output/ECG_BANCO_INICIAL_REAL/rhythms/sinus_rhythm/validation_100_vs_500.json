@@ -1,0 +1,54 @@
+{
+  "leads": {
+    "V2": {
+      "correlation100vs500": 0.994445,
+      "rmseMv": 0.035382,
+      "min100Mv": -1.546,
+      "max100Mv": 0.531,
+      "min500Mv": -1.52,
+      "max500Mv": 0.539,
+      "peakToPeak100Mv": 2.077,
+      "peakToPeak500Mv": 2.059,
+      "peakToPeakDifferencePercent": 0.874,
+      "morphologyPreserved": true
+    },
+    "V3": {
+      "correlation100vs500": 0.993307,
+      "rmseMv": 0.040863,
+      "min100Mv": -1.518,
+      "max100Mv": 0.594,
+      "min500Mv": -1.526,
+      "max500Mv": 0.592,
+      "peakToPeak100Mv": 2.112,
+      "peakToPeak500Mv": 2.118,
+      "peakToPeakDifferencePercent": 0.283,
+      "morphologyPreserved": true
+    },
+    "V4": {
+      "correlation100vs500": 0.991658,
+      "rmseMv": 0.037307,
+      "min100Mv": -1.14,
+      "max100Mv": 0.964,
+      "min500Mv": -1.175,
+      "max500Mv": 1.002,
+      "peakToPeak100Mv": 2.104,
+      "peakToPeak500Mv": 2.177,
+      "peakToPeakDifferencePercent": 3.353,
+      "morphologyPreserved": true
+    },
+    "V5": {
+      "correlation100vs500": 0.990949,
+      "rmseMv": 0.02835,
+      "min100Mv": -0.554,
+      "max100Mv": 1.139,
+      "min500Mv": -0.59,
+      "max500Mv": 1.222,
+      "peakToPeak100Mv": 1.693,
+      "peakToPeak500Mv": 1.812,
+      "peakToPeakDifferencePercent": 6.567,
+      "morphologyPreserved": true
+    }
+  },
+  "allPrecordialsPreserved": true,
+  "conclusion": "La morfología y amplitud de V2–V5 se conservan entre 100 y 500 Hz; las ondas llamativas proceden del registro, no del remuestreo."
+}

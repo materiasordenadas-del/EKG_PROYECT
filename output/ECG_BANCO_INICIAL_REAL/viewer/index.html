@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Banco inicial de ECG reales</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="topography-overlay.css">
+</head>
+<body>
+  <header class="topbar">
+    <div><h1>Banco inicial de ECG reales</h1><p id="subtitle">PTB-XL · 12 derivaciones · señal en mV</p></div>
+    <div class="controls">
+      <label>Ritmo<select id="rhythmSelect"></select></label>
+      <label>Modo<select id="displayModeSelect"><option value="animated" selected>Animado</option><option value="static">Estático</option></select></label>
+      <label>Resolución<select id="resolutionSelect"><option value="100" selected>100 Hz</option><option value="500">500 Hz</option></select></label>
+      <label>Ganancia<select id="gainSelect"><option value="5">5 mm/mV</option><option value="10" selected>10 mm/mV</option><option value="20">20 mm/mV</option></select></label>
+      <label class="anim-only">FC original<span id="originalHeartRate" class="heart-rate-readout">— lpm</span></label>
+      <label class="anim-only">FC de reproducción<input id="targetHeartRateInput" type="number" min="20" max="300" step="1" inputmode="numeric" aria-label="Frecuencia cardíaca de reproducción en latidos por minuto"></label>
+      <button id="resetHeartRateButton" class="anim-only" type="button">Restablecer FC original</button>
+      <button id="playPauseButton" class="anim-only" type="button">Pausar</button>
+      <button id="restartButton" class="anim-only" type="button">Reiniciar</button>
+      <button id="diagnosisButton" type="button">Mostrar diagnóstico</button>
+    </div>
+  </header>
+  <main>
+    <section class="status-row"><div class="status" id="status">Cargando catálogo…</div><div class="time-readout" id="timeReadout">t = 0,00 s</div></section>
+    <section class="ecg-education-layer" aria-label="Topografía electrocardiográfica">
+      <div class="education-mode-row">
+        <div role="group" aria-label="Nivel educativo">
+          <button type="button" data-education-mode="simple" aria-pressed="true">Simplificada</button>
+          <button type="button" data-education-mode="advanced" aria-pressed="false">Profunda</button>
+        </div>
+        <button type="button" id="resetTopographySelections">Restablecer</button>
+      </div>
+      <section><h2>Topografía por cara cardíaca</h2><div id="topographyTerritoryBar" class="education-chip-bar"></div></section>
+      <section><h2>Correlación coronaria probable</h2><div id="coronaryCorrelationBar" class="education-chip-bar"></div><div id="coronaryDetails" class="coronary-details" aria-live="polite"></div></section>
+      <div id="topographyLegend" class="topography-legend"></div>
+      <div id="additionalLeadNotice" class="additional-lead-notice"></div>
+    </section>
+    <section class="paper-wrap"><div id="ecgStage" class="ecg-stage"><canvas id="ecgCanvas"></canvas><div id="ecgLeadOverlay" class="ecg-lead-overlay" aria-hidden="true"></div></div></section>
+    <details class="record-details">
+      <summary>Información del registro</summary>
+      <div id="recordSections" class="record-sections"></div>
+    </details>
+    <section class="info-grid"><article><h2>Capa educativa</h2><div id="educationalContent"></div></article></section>
+  </main>
+  <script src="data.js"></script>
+  <script src="ecg-topography-medical-data.js"></script>
+  <script src="topography-overlay.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

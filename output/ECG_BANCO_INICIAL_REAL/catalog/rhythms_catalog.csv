@@ -1,0 +1,9 @@
+id,title,targetCode,ecgId,sampleRateHz,durationSeconds,path
+sinus_rhythm,Ritmo sinusal normal,NORM,9073,100,10.0,rhythms/sinus_rhythm/signal.json
+sinus_bradycardia,Bradicardia sinusal,SBRAD,13696,100,10.0,rhythms/sinus_bradycardia/signal.json
+sinus_tachycardia,Taquicardia sinusal,STACH,1628,100,10.0,rhythms/sinus_tachycardia/signal.json
+atrial_fibrillation,Fibrilación auricular,AFIB,8215,100,10.0,rhythms/atrial_fibrillation/signal.json
+atrial_flutter,Flutter auricular,AFLT,23,100,10.0,rhythms/atrial_flutter/signal.json
+first_degree_av_block,Bloqueo AV de primer grado,1AVB,9108,100,10.0,rhythms/first_degree_av_block/signal.json
+third_degree_av_block,Bloqueo AV completo/de tercer grado,3AVB,8620,100,10.0,rhythms/third_degree_av_block/signal.json
+ventricular_premature_beats,Extrasístoles ventriculares,PVC,9266,100,10.0,rhythms/ventricular_premature_beats/signal.json

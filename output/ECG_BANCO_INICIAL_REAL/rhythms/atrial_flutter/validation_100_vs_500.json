@@ -1,0 +1,54 @@
+{
+  "leads": {
+    "V2": {
+      "correlation100vs500": 0.994856,
+      "rmseMv": 0.03932,
+      "min100Mv": -1.89,
+      "max100Mv": 0.42,
+      "min500Mv": -1.841,
+      "max500Mv": 0.421,
+      "peakToPeak100Mv": 2.31,
+      "peakToPeak500Mv": 2.262,
+      "peakToPeakDifferencePercent": 2.122,
+      "morphologyPreserved": true
+    },
+    "V3": {
+      "correlation100vs500": 0.993209,
+      "rmseMv": 0.029485,
+      "min100Mv": -1.134,
+      "max100Mv": 0.606,
+      "min500Mv": -1.307,
+      "max500Mv": 0.627,
+      "peakToPeak100Mv": 1.74,
+      "peakToPeak500Mv": 1.934,
+      "peakToPeakDifferencePercent": 10.031,
+      "morphologyPreserved": false
+    },
+    "V4": {
+      "correlation100vs500": 0.990917,
+      "rmseMv": 0.032812,
+      "min100Mv": -0.887,
+      "max100Mv": 1.033,
+      "min500Mv": -0.997,
+      "max500Mv": 1.098,
+      "peakToPeak100Mv": 1.92,
+      "peakToPeak500Mv": 2.095,
+      "peakToPeakDifferencePercent": 8.353,
+      "morphologyPreserved": false
+    },
+    "V5": {
+      "correlation100vs500": 0.992333,
+      "rmseMv": 0.031953,
+      "min100Mv": -0.656,
+      "max100Mv": 1.418,
+      "min500Mv": -0.699,
+      "max500Mv": 1.47,
+      "peakToPeak100Mv": 2.074,
+      "peakToPeak500Mv": 2.169,
+      "peakToPeakDifferencePercent": 4.38,
+      "morphologyPreserved": true
+    }
+  },
+  "allPrecordialsPreserved": false,
+  "conclusion": "Existen diferencias relevantes entre 100 y 500 Hz en una o más precordiales; debe revisarse visualmente la versión de 500 Hz antes de concluir."
+}
