@@ -30,6 +30,11 @@ def main() -> None:
             "La velocidad del papel debe permanecer fija a 25 mm/s.")
     for control in ("originalHeartRate", "targetHeartRateInput", "resetHeartRateButton", "playPauseButton", "restartButton"):
         require(control in html, f"Falta el control {control}.")
+    require("surfaceModeSelect" in html and "Monitor negro" in html, "Falta el modo de pantalla negra.")
+    require("surfaceMode: 'paper'" in script and "function traceColor()" in script,
+            "Falta el estado visual independiente del ECG.")
+    require("ctx.fillStyle = '#030706'" in script and "'#39ff88'" in script,
+            "El modo monitor debe usar fondo negro y ondas verdes.")
     require("function heartRateScale()" in script, "Falta la escala temporal basada en FC.")
     require("target / original" in script, "La escala debe ser FC de reproducción / FC original.")
     require("state.displayTimeSec += deltaSec" in script, "El tiempo visible debe avanzar solo con dt real.")

@@ -27,6 +27,10 @@ La animación no tiene controles 0,5×, 1×, 2× ni selector de velocidad. El pa
 - A 120 lpm frente a un original de 60 lpm se ven aproximadamente el doble de complejos en los mismos 10 segundos de pantalla; el cursor no se mueve más rápido.
 - Pausar/Reproducir no cambia la FC. Reiniciar vuelve al inicio y conserva la FC de reproducción elegida. "Restablecer FC original" devuelve la escala a tiempo real.
 
+## Pantalla de monitor
+
+En el selector **Pantalla**, elija **Monitor negro** para ver un fondo negro sin cuadrícula ni línea de base, con ondas y etiquetas verdes. Este cambio es solamente visual y no altera ninguna señal ECG.
+
 ## Capa educativa de topografía
 
 Sobre el ECG están los modos **Simplificada** y **Profunda**. Seleccione caras cardíacas o arterias para ver marcos de colores sobre las derivaciones relacionadas; un segundo clic las retira y **Restablecer** borra todas las selecciones.

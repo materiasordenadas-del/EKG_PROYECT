@@ -15,7 +15,7 @@ const ANIM_LONG_SEC = 10;
 
 const state = {
   catalog: [], signal: null, metadata: null, educational: null, resolutionHz: 100,
-  diagnosisVisible: false, displayMode: 'animated', originalHeartRate: null, targetHeartRate: null,
+  diagnosisVisible: false, displayMode: 'animated', surfaceMode: 'paper', originalHeartRate: null, targetHeartRate: null,
   isPlaying: true, displayTimeSec: 0, rafId: 0, lastFrameTs: 0,
 };
 
@@ -103,6 +103,10 @@ function heartRateScale() {
   return target / original;
 }
 
+function traceColor() {
+  return state.surfaceMode === 'monitor' ? '#39ff88' : '#101820';
+}
+
 function updateModeControls() {
   const animated = state.displayMode === 'animated';
   document.querySelectorAll('.anim-only').forEach(el => el.classList.toggle('hidden', !animated));
@@ -160,6 +164,11 @@ async function init() {
     $('displayModeSelect').addEventListener('change', () => {
       state.displayMode = $('displayModeSelect').value;
       updateModeControls();
+      draw();
+    });
+    $('surfaceModeSelect').addEventListener('change', () => {
+      state.surfaceMode = $('surfaceModeSelect').value;
+      document.body.classList.toggle('monitor-surface', state.surfaceMode === 'monitor');
       draw();
     });
     $('targetHeartRateInput').addEventListener('change', () => {
@@ -329,7 +338,7 @@ function draw() {
     drawAnimated(ctx, signal, fs, marginX, marginTop, colWidth, rowHeight, width, longTop, longHeight, gain);
   }
 
-  drawCalibration(ctx, marginX + 4, marginTop + 3, gain);
+  if (state.surfaceMode === 'paper') drawCalibration(ctx, marginX + 4, marginTop + 3, gain);
   window.ECGTopographyOverlay?.syncGeometry();
   window.ECGTopographyOverlay?.renderFrames();
 }
@@ -417,7 +426,7 @@ function drawCircularWindow(ctx, data, fs, displayStartSec, windowSec, scale, x,
   ctx.clip();
   drawBaseline(ctx, x, y, width, height);
 
-  ctx.strokeStyle = '#101820';
+  ctx.strokeStyle = traceColor();
   ctx.lineWidth = 1.35;
   ctx.lineJoin = 'round';
   ctx.lineCap = 'round';
@@ -451,7 +460,7 @@ function drawLeadSegment(ctx, data, fs, displayStartSec, durationSec, scale, x, 
   drawBaseline(ctx, x, y, width, height);
 
   if (pointCount >= 2) {
-    ctx.strokeStyle = '#101820';
+    ctx.strokeStyle = traceColor();
     ctx.lineWidth = 1.35;
     ctx.lineJoin = 'round';
     ctx.lineCap = 'round';
@@ -472,6 +481,7 @@ function drawLeadSegment(ctx, data, fs, displayStartSec, durationSec, scale, x, 
 }
 
 function drawBaseline(ctx, x, y, width, height) {
+  if (state.surfaceMode === 'monitor') return;
   const centerY = y + height / 2;
   ctx.strokeStyle = 'rgba(16,24,32,.22)';
   ctx.lineWidth = 0.7;
@@ -482,6 +492,11 @@ function drawBaseline(ctx, x, y, width, height) {
 }
 
 function drawGrid(ctx, x, y, width, height) {
+  if (state.surfaceMode === 'monitor') {
+    ctx.fillStyle = '#030706';
+    ctx.fillRect(x, y, width, height);
+    return;
+  }
   const small = PAPER_MM_PX;
   ctx.save();
   ctx.fillStyle = '#fffdfd';
@@ -503,7 +518,7 @@ function drawGrid(ctx, x, y, width, height) {
 
 function drawLeadLabel(ctx, label, x, y) {
   ctx.save();
-  ctx.fillStyle = '#111820';
+  ctx.fillStyle = state.surfaceMode === 'monitor' ? '#7dffad' : '#111820';
   ctx.font = '700 13px system-ui, sans-serif';
   ctx.fillText(label, x + 8, y + 18);
   ctx.restore();
@@ -511,7 +526,7 @@ function drawLeadLabel(ctx, label, x, y) {
 
 function drawCursorBar(ctx, x, y, height) {
   ctx.save();
-  ctx.strokeStyle = '#157347';
+  ctx.strokeStyle = state.surfaceMode === 'monitor' ? '#39ff88' : '#157347';
   ctx.lineWidth = 1.2;
   ctx.beginPath();
   ctx.moveTo(x, y + 2);
