@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0",
+  "dataset": {"name": "PTB-XL", "version": "1.0.3", "license": "CC BY 4.0"},
+  "targetCode": "AFIB",
+  "productionEcgIdExcluded": 8215,
+  "candidates": [
+    {"id":"ecg_00330","ecgId":330,"title":"FA · ECG 330","group":"FA predominante","summary":"Fibrilación auricular; sin otra patología definida","record100":"records100/00000/00330_lr","record500":"records500/00000/00330_hr"},
+    {"id":"ecg_00697","ecgId":697,"title":"FA · ECG 697","group":"FA predominante","summary":"Fibrilación auricular; eje izquierdo limítrofe; sin otra patología definida","record100":"records100/00000/00697_lr","record500":"records500/00000/00697_hr"},
+    {"id":"ecg_00759","ecgId":759,"title":"FA · ECG 759","group":"FA predominante","summary":"Fibrilación auricular; sin otra patología definida","record100":"records100/00000/00759_lr","record500":"records500/00000/00759_hr"},
+    {"id":"ecg_00866","ecgId":866,"title":"FA · ECG 866","group":"FA predominante","summary":"Fibrilación auricular con bloqueo incompleto de rama derecha","record100":"records100/00000/00866_lr","record500":"records500/00000/00866_hr"},
+    {"id":"ecg_00872","ecgId":872,"title":"FA · ECG 872","group":"FA predominante","summary":"Fibrilación auricular con bajo voltaje en derivaciones de miembros","record100":"records100/00000/00872_lr","record500":"records500/00000/00872_hr"},
+    {"id":"ecg_00908","ecgId":908,"title":"FA · ECG 908","group":"FA predominante","summary":"Fibrilación auricular; sin otra patología definida","record100":"records100/00000/00908_lr","record500":"records500/00000/00908_hr"},
+    {"id":"ecg_00963","ecgId":963,"title":"FA · ECG 963","group":"FA con variación educativa","summary":"FA con respuesta ventricular rápida y bajo voltaje","record100":"records100/00000/00963_lr","record500":"records500/00000/00963_hr"},
+    {"id":"ecg_01193","ecgId":1193,"title":"FA · ECG 1193","group":"FA con variación educativa","summary":"FA con discreto aplanamiento de onda T","record100":"records100/01000/01193_lr","record500":"records500/01000/01193_hr"},
+    {"id":"ecg_01508","ecgId":1508,"title":"FA · ECG 1508","group":"FA con variación educativa","summary":"FA con respuesta ventricular rápida; posible hipertrofia ventricular izquierda","record100":"records100/01000/01508_lr","record500":"records500/01000/01508_hr"},
+    {"id":"ecg_01755","ecgId":1755,"title":"FA · ECG 1755","group":"FA con variación educativa","summary":"FA con respuesta ventricular rápida y cambios menores de onda T","record100":"records100/01000/01755_lr","record500":"records500/01000/01755_hr"},
+    {"id":"ecg_01858","ecgId":1858,"title":"FA · ECG 1858","group":"FA con variación educativa","summary":"FA con respuesta ventricular rápida informada en 166 lpm","record100":"records100/01000/01858_lr","record500":"records500/01000/01858_hr"},
+    {"id":"ecg_01889","ecgId":1889,"title":"FA · ECG 1889","group":"FA predominante","summary":"Fibrilación auricular; sin otra patología definida","record100":"records100/01000/01889_lr","record500":"records500/01000/01889_hr"},
+    {"id":"ecg_02032","ecgId":2032,"title":"FA · ECG 2032","group":"FA predominante","summary":"Fibrilación auricular; ECG descrito como normal aparte del ritmo","record100":"records100/02000/02032_lr","record500":"records500/02000/02032_hr"},
+    {"id":"ecg_02035","ecgId":2035,"title":"FA · ECG 2035","group":"FA predominante","summary":"Fibrilación auricular; sin otra patología definida","record100":"records100/02000/02035_lr","record500":"records500/02000/02035_hr"},
+    {"id":"ecg_02078","ecgId":2078,"title":"FA · ECG 2078","group":"FA predominante","summary":"Fibrilación auricular; sin otra patología definida","record100":"records100/02000/02078_lr","record500":"records500/02000/02078_hr"},
+    {"id":"ecg_02125","ecgId":2125,"title":"FA · ECG 2125","group":"FA con variación educativa","summary":"FA con respuesta ventricular rápida y cambios ST-T no diagnósticos","record100":"records100/02000/02125_lr","record500":"records500/02000/02125_hr"},
+    {"id":"ecg_02240","ecgId":2240,"title":"FA · ECG 2240","group":"FA con variación educativa","summary":"FA con respuesta ventricular rápida y alteraciones ST-T inespecíficas","record100":"records100/02000/02240_lr","record500":"records500/02000/02240_hr"},
+    {"id":"ecg_02304","ecgId":2304,"title":"FA · ECG 2304","group":"FA con variación educativa","summary":"FA con respuesta ventricular rápida; ECG descrito como normal aparte del ritmo","record100":"records100/02000/02304_lr","record500":"records500/02000/02304_hr"},
+    {"id":"ecg_02673","ecgId":2673,"title":"FA · ECG 2673","group":"FA con variación educativa","summary":"FA con respuesta ventricular rápida; sin otra patología definida","record100":"records100/02000/02673_lr","record500":"records500/02000/02673_hr"},
+    {"id":"ecg_03097","ecgId":3097,"title":"FA · ECG 3097","group":"FA con variación educativa","summary":"FA con respuesta ventricular rápida y cambios ST-T inespecíficos","record100":"records100/03000/03097_lr","record500":"records500/03000/03097_hr"}
+  ]
+}
