@@ -73,7 +73,7 @@
   },
   {
     "id": "ecg_00330",
-    "title": "[PRUEBA] FA · ECG 330",
+    "title": "[PRUEBA] Fibrilación auricular · ECG 330",
     "targetCode": "AFIB",
     "ecgId": 330,
     "sampleRateHz": 100,
@@ -83,7 +83,7 @@
   },
   {
     "id": "ecg_00697",
-    "title": "[PRUEBA] FA · ECG 697",
+    "title": "[PRUEBA] Fibrilación auricular · ECG 697",
     "targetCode": "AFIB",
     "ecgId": 697,
     "sampleRateHz": 100,
@@ -93,7 +93,7 @@
   },
   {
     "id": "ecg_00759",
-    "title": "[PRUEBA] FA · ECG 759",
+    "title": "[PRUEBA] Fibrilación auricular · ECG 759",
     "targetCode": "AFIB",
     "ecgId": 759,
     "sampleRateHz": 100,
@@ -103,7 +103,7 @@
   },
   {
     "id": "ecg_00866",
-    "title": "[PRUEBA] FA · ECG 866",
+    "title": "[PRUEBA] Fibrilación auricular · ECG 866",
     "targetCode": "AFIB",
     "ecgId": 866,
     "sampleRateHz": 100,
@@ -113,7 +113,7 @@
   },
   {
     "id": "ecg_00872",
-    "title": "[PRUEBA] FA · ECG 872",
+    "title": "[PRUEBA] Fibrilación auricular · ECG 872",
     "targetCode": "AFIB",
     "ecgId": 872,
     "sampleRateHz": 100,
@@ -123,7 +123,7 @@
   },
   {
     "id": "ecg_00908",
-    "title": "[PRUEBA] FA · ECG 908",
+    "title": "[PRUEBA] Fibrilación auricular · ECG 908",
     "targetCode": "AFIB",
     "ecgId": 908,
     "sampleRateHz": 100,
@@ -133,7 +133,7 @@
   },
   {
     "id": "ecg_00963",
-    "title": "[PRUEBA] FA · ECG 963",
+    "title": "[PRUEBA] Fibrilación auricular · ECG 963",
     "targetCode": "AFIB",
     "ecgId": 963,
     "sampleRateHz": 100,
@@ -143,7 +143,7 @@
   },
   {
     "id": "ecg_01193",
-    "title": "[PRUEBA] FA · ECG 1193",
+    "title": "[PRUEBA] Fibrilación auricular · ECG 1193",
     "targetCode": "AFIB",
     "ecgId": 1193,
     "sampleRateHz": 100,
@@ -153,7 +153,7 @@
   },
   {
     "id": "ecg_01508",
-    "title": "[PRUEBA] FA · ECG 1508",
+    "title": "[PRUEBA] Fibrilación auricular · ECG 1508",
     "targetCode": "AFIB",
     "ecgId": 1508,
     "sampleRateHz": 100,
@@ -163,7 +163,7 @@
   },
   {
     "id": "ecg_01755",
-    "title": "[PRUEBA] FA · ECG 1755",
+    "title": "[PRUEBA] Fibrilación auricular · ECG 1755",
     "targetCode": "AFIB",
     "ecgId": 1755,
     "sampleRateHz": 100,
@@ -173,7 +173,7 @@
   },
   {
     "id": "ecg_01858",
-    "title": "[PRUEBA] FA · ECG 1858",
+    "title": "[PRUEBA] Fibrilación auricular · ECG 1858",
     "targetCode": "AFIB",
     "ecgId": 1858,
     "sampleRateHz": 100,
@@ -183,7 +183,7 @@
   },
   {
     "id": "ecg_01889",
-    "title": "[PRUEBA] FA · ECG 1889",
+    "title": "[PRUEBA] Fibrilación auricular · ECG 1889",
     "targetCode": "AFIB",
     "ecgId": 1889,
     "sampleRateHz": 100,
@@ -193,7 +193,7 @@
   },
   {
     "id": "ecg_02032",
-    "title": "[PRUEBA] FA · ECG 2032",
+    "title": "[PRUEBA] Fibrilación auricular · ECG 2032",
     "targetCode": "AFIB",
     "ecgId": 2032,
     "sampleRateHz": 100,
@@ -203,7 +203,7 @@
   },
   {
     "id": "ecg_02035",
-    "title": "[PRUEBA] FA · ECG 2035",
+    "title": "[PRUEBA] Fibrilación auricular · ECG 2035",
     "targetCode": "AFIB",
     "ecgId": 2035,
     "sampleRateHz": 100,
@@ -213,7 +213,7 @@
   },
   {
     "id": "ecg_02078",
-    "title": "[PRUEBA] FA · ECG 2078",
+    "title": "[PRUEBA] Fibrilación auricular · ECG 2078",
     "targetCode": "AFIB",
     "ecgId": 2078,
     "sampleRateHz": 100,
@@ -223,7 +223,7 @@
   },
   {
     "id": "ecg_02125",
-    "title": "[PRUEBA] FA · ECG 2125",
+    "title": "[PRUEBA] Fibrilación auricular · ECG 2125",
     "targetCode": "AFIB",
     "ecgId": 2125,
     "sampleRateHz": 100,
@@ -233,7 +233,7 @@
   },
   {
     "id": "ecg_02240",
-    "title": "[PRUEBA] FA · ECG 2240",
+    "title": "[PRUEBA] Fibrilación auricular · ECG 2240",
     "targetCode": "AFIB",
     "ecgId": 2240,
     "sampleRateHz": 100,
@@ -243,7 +243,7 @@
   },
   {
     "id": "ecg_02304",
-    "title": "[PRUEBA] FA · ECG 2304",
+    "title": "[PRUEBA] Fibrilación auricular · ECG 2304",
     "targetCode": "AFIB",
     "ecgId": 2304,
     "sampleRateHz": 100,
@@ -253,7 +253,7 @@
   },
   {
     "id": "ecg_02673",
-    "title": "[PRUEBA] FA · ECG 2673",
+    "title": "[PRUEBA] Fibrilación auricular · ECG 2673",
     "targetCode": "AFIB",
     "ecgId": 2673,
     "sampleRateHz": 100,
@@ -263,7 +263,7 @@
   },
   {
     "id": "ecg_03097",
-    "title": "[PRUEBA] FA · ECG 3097",
+    "title": "[PRUEBA] Fibrilación auricular · ECG 3097",
     "targetCode": "AFIB",
     "ecgId": 3097,
     "sampleRateHz": 100,

@@ -5,6 +5,7 @@
   "selectionScore": null,
   "ecgId": 2304,
   "candidateStatus": "pending_review",
+  "status": "pending_review",
   "candidateGroup": "FA con variación educativa",
   "candidateSummary": "FA con respuesta ventricular rápida; ECG descrito como normal aparte del ritmo",
   "patient": {
@@ -97,5 +98,7 @@
     "filename_lr": "records100/02000/02304_lr",
     "filename_hr": "records500/02000/02304_hr"
   },
+  "filename_lr": "records100/02000/02304_lr",
+  "filename_hr": "records500/02000/02304_hr",
   "files": {}
 }

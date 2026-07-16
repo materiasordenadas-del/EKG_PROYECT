@@ -1,6 +1,9 @@
 {
   "rhythmId": "ecg_00866",
   "status": "candidate",
+  "diagnosis": "Fibrilación auricular",
+  "reviewStatus": "pending_review",
+  "note": "Candidato en rama pruebas. Requiere revisión visual antes de incorporarse a main.",
   "findings": [
     {
       "label": "Candidato de fibrilación auricular pendiente de revisión."

@@ -5,6 +5,7 @@
   "selectionScore": null,
   "ecgId": 872,
   "candidateStatus": "pending_review",
+  "status": "pending_review",
   "candidateGroup": "FA predominante",
   "candidateSummary": "Fibrilación auricular con bajo voltaje en derivaciones de miembros",
   "patient": {
@@ -97,5 +98,7 @@
     "filename_lr": "records100/00000/00872_lr",
     "filename_hr": "records500/00000/00872_hr"
   },
+  "filename_lr": "records100/00000/00872_lr",
+  "filename_hr": "records500/00000/00872_hr",
   "files": {}
 }

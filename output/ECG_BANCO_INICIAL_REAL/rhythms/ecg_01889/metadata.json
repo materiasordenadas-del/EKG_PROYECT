@@ -5,6 +5,7 @@
   "selectionScore": null,
   "ecgId": 1889,
   "candidateStatus": "pending_review",
+  "status": "pending_review",
   "candidateGroup": "FA predominante",
   "candidateSummary": "Fibrilación auricular; sin otra patología definida",
   "patient": {
@@ -97,5 +98,7 @@
     "filename_lr": "records100/01000/01889_lr",
     "filename_hr": "records500/01000/01889_hr"
   },
+  "filename_lr": "records100/01000/01889_lr",
+  "filename_hr": "records500/01000/01889_hr",
   "files": {}
 }

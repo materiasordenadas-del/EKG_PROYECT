@@ -1,9 +1,29 @@
-id,title,targetCode,ecgId,sampleRateHz,durationSeconds,path
-sinus_rhythm,Ritmo sinusal normal,NORM,9073,100,10.0,rhythms/sinus_rhythm/signal.json
-sinus_bradycardia,Bradicardia sinusal,SBRAD,13696,100,10.0,rhythms/sinus_bradycardia/signal.json
-sinus_tachycardia,Taquicardia sinusal,STACH,1628,100,10.0,rhythms/sinus_tachycardia/signal.json
-atrial_fibrillation,Fibrilación auricular,AFIB,8215,100,10.0,rhythms/atrial_fibrillation/signal.json
-atrial_flutter,Flutter auricular,AFLT,23,100,10.0,rhythms/atrial_flutter/signal.json
-first_degree_av_block,Bloqueo AV de primer grado,1AVB,9108,100,10.0,rhythms/first_degree_av_block/signal.json
-third_degree_av_block,Bloqueo AV completo/de tercer grado,3AVB,8620,100,10.0,rhythms/third_degree_av_block/signal.json
-ventricular_premature_beats,Extrasístoles ventriculares,PVC,9266,100,10.0,rhythms/ventricular_premature_beats/signal.json
+id,title,targetCode,ecgId,sampleRateHz,durationSeconds,path,status
+sinus_rhythm,Ritmo sinusal normal,NORM,9073,100,10.0,rhythms/sinus_rhythm/signal.json,
+sinus_bradycardia,Bradicardia sinusal,SBRAD,13696,100,10.0,rhythms/sinus_bradycardia/signal.json,
+sinus_tachycardia,Taquicardia sinusal,STACH,1628,100,10.0,rhythms/sinus_tachycardia/signal.json,
+atrial_fibrillation,Fibrilación auricular,AFIB,8215,100,10.0,rhythms/atrial_fibrillation/signal.json,
+atrial_flutter,Flutter auricular,AFLT,23,100,10.0,rhythms/atrial_flutter/signal.json,
+first_degree_av_block,Bloqueo AV de primer grado,1AVB,9108,100,10.0,rhythms/first_degree_av_block/signal.json,
+third_degree_av_block,Bloqueo AV completo/de tercer grado,3AVB,8620,100,10.0,rhythms/third_degree_av_block/signal.json,
+ventricular_premature_beats,Extrasístoles ventriculares,PVC,9266,100,10.0,rhythms/ventricular_premature_beats/signal.json,
+ecg_00330,[PRUEBA] Fibrilación auricular · ECG 330,AFIB,330,100,10.0,rhythms/ecg_00330/signal.json,candidate
+ecg_00697,[PRUEBA] Fibrilación auricular · ECG 697,AFIB,697,100,10.0,rhythms/ecg_00697/signal.json,candidate
+ecg_00759,[PRUEBA] Fibrilación auricular · ECG 759,AFIB,759,100,10.0,rhythms/ecg_00759/signal.json,candidate
+ecg_00866,[PRUEBA] Fibrilación auricular · ECG 866,AFIB,866,100,10.0,rhythms/ecg_00866/signal.json,candidate
+ecg_00872,[PRUEBA] Fibrilación auricular · ECG 872,AFIB,872,100,10.0,rhythms/ecg_00872/signal.json,candidate
+ecg_00908,[PRUEBA] Fibrilación auricular · ECG 908,AFIB,908,100,10.0,rhythms/ecg_00908/signal.json,candidate
+ecg_00963,[PRUEBA] Fibrilación auricular · ECG 963,AFIB,963,100,10.0,rhythms/ecg_00963/signal.json,candidate
+ecg_01193,[PRUEBA] Fibrilación auricular · ECG 1193,AFIB,1193,100,10.0,rhythms/ecg_01193/signal.json,candidate
+ecg_01508,[PRUEBA] Fibrilación auricular · ECG 1508,AFIB,1508,100,10.0,rhythms/ecg_01508/signal.json,candidate
+ecg_01755,[PRUEBA] Fibrilación auricular · ECG 1755,AFIB,1755,100,10.0,rhythms/ecg_01755/signal.json,candidate
+ecg_01858,[PRUEBA] Fibrilación auricular · ECG 1858,AFIB,1858,100,10.0,rhythms/ecg_01858/signal.json,candidate
+ecg_01889,[PRUEBA] Fibrilación auricular · ECG 1889,AFIB,1889,100,10.0,rhythms/ecg_01889/signal.json,candidate
+ecg_02032,[PRUEBA] Fibrilación auricular · ECG 2032,AFIB,2032,100,10.0,rhythms/ecg_02032/signal.json,candidate
+ecg_02035,[PRUEBA] Fibrilación auricular · ECG 2035,AFIB,2035,100,10.0,rhythms/ecg_02035/signal.json,candidate
+ecg_02078,[PRUEBA] Fibrilación auricular · ECG 2078,AFIB,2078,100,10.0,rhythms/ecg_02078/signal.json,candidate
+ecg_02125,[PRUEBA] Fibrilación auricular · ECG 2125,AFIB,2125,100,10.0,rhythms/ecg_02125/signal.json,candidate
+ecg_02240,[PRUEBA] Fibrilación auricular · ECG 2240,AFIB,2240,100,10.0,rhythms/ecg_02240/signal.json,candidate
+ecg_02304,[PRUEBA] Fibrilación auricular · ECG 2304,AFIB,2304,100,10.0,rhythms/ecg_02304/signal.json,candidate
+ecg_02673,[PRUEBA] Fibrilación auricular · ECG 2673,AFIB,2673,100,10.0,rhythms/ecg_02673/signal.json,candidate
+ecg_03097,[PRUEBA] Fibrilación auricular · ECG 3097,AFIB,3097,100,10.0,rhythms/ecg_03097/signal.json,candidate

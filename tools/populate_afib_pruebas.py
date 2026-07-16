@@ -4,6 +4,8 @@ import ast
 import csv
 import io
 import json
+import subprocess
+import sys
 import urllib.request
 from pathlib import Path, PurePosixPath
 from typing import Any
@@ -15,10 +17,21 @@ BANK = ROOT / "output" / "ECG_BANCO_INICIAL_REAL"
 RHYTHMS = BANK / "rhythms"
 MANIFEST = BANK / "candidates" / "afib_candidates.json"
 CATALOG = BANK / "catalog" / "rhythms_catalog.json"
+CATALOG_CSV = BANK / "catalog" / "rhythms_catalog.csv"
 PTB_DIR = "ptb-xl/1.0.3"
 METADATA_URL = "https://physionet.org/files/ptb-xl/1.0.3/ptbxl_database.csv"
 LEADS = ["I", "II", "III", "aVR", "aVL", "aVF", "V1", "V2", "V3", "V4", "V5", "V6"]
 CANON = {name.upper(): name for name in LEADS}
+
+
+def ensure_pruebas_branch() -> None:
+    branch = subprocess.check_output(["git", "rev-parse", "--abbrev-ref", "HEAD"], cwd=ROOT, text=True).strip()
+    if branch != "pruebas":
+        raise RuntimeError(f"Este generador solo puede ejecutarse en la rama pruebas; rama actual: {branch}")
+
+
+def candidate_title(ecg_id: int) -> str:
+    return f"Fibrilación auricular · ECG {ecg_id}"
 
 
 def clean(value: Any) -> Any:
@@ -85,6 +98,12 @@ def read_signal(remote_record: str, rhythm_id: str, title: str, ecg_id: int) -> 
     missing = [lead for lead in LEADS if lead not in leads]
     if missing:
         raise RuntimeError(f"Faltan derivaciones {missing} en {remote_record}")
+    expected_fs = 100 if "records100" in remote_record else 500
+    if fs != expected_fs:
+        raise RuntimeError(f"Frecuencia inválida en {remote_record}: {fs} Hz; se esperaban {expected_fs} Hz")
+    expected_samples = expected_fs * 10
+    if samples != expected_samples:
+        raise RuntimeError(f"Duración inválida en {remote_record}: {samples} muestras; se esperaban {expected_samples}")
     return {
         "schemaVersion": "1.1",
         "id": rhythm_id,
@@ -109,6 +128,7 @@ def build_metadata(candidate: dict[str, Any], row: dict[str, str]) -> dict[str, 
         "selectionScore": None,
         "ecgId": int(candidate["ecgId"]),
         "candidateStatus": "pending_review",
+        "status": "pending_review",
         "candidateGroup": candidate.get("group"),
         "candidateSummary": candidate.get("summary"),
         "patient": {
@@ -156,6 +176,8 @@ def build_metadata(candidate: dict[str, Any], row: dict[str, str]) -> dict[str, 
             "conclusion": "Candidato de prueba con señales oficiales PTB-XL a 100 y 500 Hz; pendiente de revisión visual.",
         },
         "allDatasetFields": {key: clean(value) for key, value in row.items()},
+        "filename_lr": clean(row.get("filename_lr")),
+        "filename_hr": clean(row.get("filename_hr")),
         "files": {},
     }
 
@@ -170,10 +192,12 @@ def write_json(path: Path, value: Any, compact: bool = False) -> None:
 
 
 def main() -> None:
+    ensure_pruebas_branch()
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
     catalog = json.loads(CATALOG.read_text(encoding="utf-8"))
     rows = load_metadata()
-    existing = {item["id"] for item in catalog}
+    candidate_ids = {str(candidate["id"]) for candidate in manifest["candidates"]}
+    catalog = [item for item in catalog if item.get("id") not in candidate_ids]
 
     for index, candidate in enumerate(manifest["candidates"], start=1):
         rhythm_id = str(candidate["id"])
@@ -184,8 +208,9 @@ def main() -> None:
         folder = RHYTHMS / rhythm_id
         folder.mkdir(parents=True, exist_ok=True)
         print(f"[{index:02d}/20] {rhythm_id}")
-        signal100 = read_signal(candidate["record100"], rhythm_id, candidate["title"], ecg_id)
-        signal500 = read_signal(candidate["record500"], rhythm_id, candidate["title"], ecg_id)
+        title = candidate_title(ecg_id)
+        signal100 = read_signal(candidate["record100"], rhythm_id, title, ecg_id)
+        signal500 = read_signal(candidate["record500"], rhythm_id, title, ecg_id)
         write_json(folder / "signal_100hz.json", signal100, compact=True)
         write_json(folder / "signal_500hz.json", signal500, compact=True)
         write_json(folder / "signal.json", signal100, compact=True)
@@ -193,6 +218,9 @@ def main() -> None:
         write_json(folder / "educational.json", {
             "rhythmId": rhythm_id,
             "status": "candidate",
+            "diagnosis": "Fibrilación auricular",
+            "reviewStatus": "pending_review",
+            "note": "Candidato en rama pruebas. Requiere revisión visual antes de incorporarse a main.",
             "findings": [
                 {"label": "Candidato de fibrilación auricular pendiente de revisión."},
                 {"label": candidate.get("summary")},
@@ -200,20 +228,26 @@ def main() -> None:
             "questions": [],
         })
         write_json(folder / "candidate.json", candidate)
-        if rhythm_id not in existing:
-            catalog.append({
-                "id": rhythm_id,
-                "title": f"[PRUEBA] {candidate['title']}",
-                "targetCode": "AFIB",
-                "ecgId": ecg_id,
-                "sampleRateHz": 100,
-                "durationSeconds": 10.0,
-                "path": f"rhythms/{rhythm_id}/signal.json",
-                "status": "candidate",
-            })
-            existing.add(rhythm_id)
+        catalog.append({
+            "id": rhythm_id,
+            "title": f"[PRUEBA] {title}",
+            "targetCode": "AFIB",
+            "ecgId": ecg_id,
+            "sampleRateHz": 100,
+            "durationSeconds": 10.0,
+            "path": f"rhythms/{rhythm_id}/signal.json",
+            "status": "candidate",
+        })
 
     write_json(CATALOG, catalog)
+    with CATALOG_CSV.open("w", encoding="utf-8", newline="") as handle:
+        fields = ["id", "title", "targetCode", "ecgId", "sampleRateHz", "durationSeconds", "path", "status"]
+        writer = csv.DictWriter(handle, fieldnames=fields, extrasaction="ignore")
+        writer.writeheader()
+        writer.writerows(catalog)
+    sys.path.insert(0, str(ROOT / "tools"))
+    from build_ecg_bank import write_embedded_viewer_data
+    write_embedded_viewer_data()
     print(f"Listo: {len(manifest['candidates'])} candidatos incorporados al visor de pruebas.")
 
 
