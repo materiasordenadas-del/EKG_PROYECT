@@ -3,3 +3,10 @@ __pycache__/
 *.pyc
 *.bak
 *.pre_*.bak
+
+# Datos binarios y caché de la raíz de pruebas
+testing/cache/
+testing/candidates/**/source_hr.dat
+testing/candidates/**/source_lr.dat
+testing/candidates/**/signal_500hz.json
+testing/candidates/**/signal_100hz.json
