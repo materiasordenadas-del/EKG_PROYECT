@@ -1,1 +1,9 @@
-{"id":"ecg_02035","ecgId":2035,"targetCode":"AFIB","status":"pending_generation","source":"PTB-XL 1.0.3"}
+{
+  "id": "ecg_02035",
+  "ecgId": 2035,
+  "title": "FA · ECG 2035",
+  "group": "FA predominante",
+  "summary": "Fibrilación auricular; sin otra patología definida",
+  "record100": "records100/02000/02035_lr",
+  "record500": "records500/02000/02035_hr"
+}

@@ -1,1 +1,9 @@
-{"id":"ecg_00908","ecgId":908,"targetCode":"AFIB","status":"pending_generation","source":"PTB-XL 1.0.3"}
+{
+  "id": "ecg_00908",
+  "ecgId": 908,
+  "title": "FA · ECG 908",
+  "group": "FA predominante",
+  "summary": "Fibrilación auricular; sin otra patología definida",
+  "record100": "records100/00000/00908_lr",
+  "record500": "records500/00000/00908_hr"
+}

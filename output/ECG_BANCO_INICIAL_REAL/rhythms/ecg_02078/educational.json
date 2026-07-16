@@ -1,0 +1,13 @@
+{
+  "rhythmId": "ecg_02078",
+  "status": "candidate",
+  "findings": [
+    {
+      "label": "Candidato de fibrilación auricular pendiente de revisión."
+    },
+    {
+      "label": "Fibrilación auricular; sin otra patología definida"
+    }
+  ],
+  "questions": []
+}

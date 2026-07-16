@@ -1,1 +1,9 @@
-{"id":"ecg_00872","ecgId":872,"targetCode":"AFIB","status":"pending_generation","source":"PTB-XL 1.0.3"}
+{
+  "id": "ecg_00872",
+  "ecgId": 872,
+  "title": "FA · ECG 872",
+  "group": "FA predominante",
+  "summary": "Fibrilación auricular con bajo voltaje en derivaciones de miembros",
+  "record100": "records100/00000/00872_lr",
+  "record500": "records500/00000/00872_hr"
+}

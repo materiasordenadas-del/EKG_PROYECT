@@ -1,1 +1,9 @@
-{"id":"ecg_01508","ecgId":1508,"targetCode":"AFIB","status":"pending_generation","source":"PTB-XL 1.0.3"}
+{
+  "id": "ecg_01508",
+  "ecgId": 1508,
+  "title": "FA · ECG 1508",
+  "group": "FA con variación educativa",
+  "summary": "FA con respuesta ventricular rápida; posible hipertrofia ventricular izquierda",
+  "record100": "records100/01000/01508_lr",
+  "record500": "records500/01000/01508_hr"
+}

@@ -1,1 +1,9 @@
-{"id":"ecg_02240","ecgId":2240,"targetCode":"AFIB","status":"pending_generation","source":"PTB-XL 1.0.3"}
+{
+  "id": "ecg_02240",
+  "ecgId": 2240,
+  "title": "FA · ECG 2240",
+  "group": "FA con variación educativa",
+  "summary": "FA con respuesta ventricular rápida y alteraciones ST-T inespecíficas",
+  "record100": "records100/02000/02240_lr",
+  "record500": "records500/02000/02240_hr"
+}

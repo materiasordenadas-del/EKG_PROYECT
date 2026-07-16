@@ -1,1 +1,9 @@
-{"id":"ecg_01755","ecgId":1755,"targetCode":"AFIB","status":"pending_generation","source":"PTB-XL 1.0.3"}
+{
+  "id": "ecg_01755",
+  "ecgId": 1755,
+  "title": "FA · ECG 1755",
+  "group": "FA con variación educativa",
+  "summary": "FA con respuesta ventricular rápida y cambios menores de onda T",
+  "record100": "records100/01000/01755_lr",
+  "record500": "records500/01000/01755_hr"
+}

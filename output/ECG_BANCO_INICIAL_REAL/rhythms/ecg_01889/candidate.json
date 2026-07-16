@@ -1,1 +1,9 @@
-{"id":"ecg_01889","ecgId":1889,"targetCode":"AFIB","status":"pending_generation","source":"PTB-XL 1.0.3"}
+{
+  "id": "ecg_01889",
+  "ecgId": 1889,
+  "title": "FA · ECG 1889",
+  "group": "FA predominante",
+  "summary": "Fibrilación auricular; sin otra patología definida",
+  "record100": "records100/01000/01889_lr",
+  "record500": "records500/01000/01889_hr"
+}

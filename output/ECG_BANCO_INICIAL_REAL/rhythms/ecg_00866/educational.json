@@ -1,0 +1,13 @@
+{
+  "rhythmId": "ecg_00866",
+  "status": "candidate",
+  "findings": [
+    {
+      "label": "Candidato de fibrilación auricular pendiente de revisión."
+    },
+    {
+      "label": "Fibrilación auricular con bloqueo incompleto de rama derecha"
+    }
+  ],
+  "questions": []
+}

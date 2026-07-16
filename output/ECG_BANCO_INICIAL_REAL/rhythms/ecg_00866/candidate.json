@@ -1,1 +1,9 @@
-{"id":"ecg_00866","ecgId":866,"targetCode":"AFIB","status":"pending_generation","source":"PTB-XL 1.0.3"}
+{
+  "id": "ecg_00866",
+  "ecgId": 866,
+  "title": "FA · ECG 866",
+  "group": "FA predominante",
+  "summary": "Fibrilación auricular con bloqueo incompleto de rama derecha",
+  "record100": "records100/00000/00866_lr",
+  "record500": "records500/00000/00866_hr"
+}

@@ -1,1 +1,9 @@
-{"id":"ecg_01193","ecgId":1193,"targetCode":"AFIB","status":"pending_generation","source":"PTB-XL 1.0.3"}
+{
+  "id": "ecg_01193",
+  "ecgId": 1193,
+  "title": "FA · ECG 1193",
+  "group": "FA con variación educativa",
+  "summary": "FA con discreto aplanamiento de onda T",
+  "record100": "records100/01000/01193_lr",
+  "record500": "records500/01000/01193_hr"
+}

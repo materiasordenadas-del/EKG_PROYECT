@@ -1,1 +1,9 @@
-{"id":"ecg_00697","ecgId":697,"targetCode":"AFIB","status":"pending_generation","source":"PTB-XL 1.0.3"}
+{
+  "id": "ecg_00697",
+  "ecgId": 697,
+  "title": "FA · ECG 697",
+  "group": "FA predominante",
+  "summary": "Fibrilación auricular; eje izquierdo limítrofe; sin otra patología definida",
+  "record100": "records100/00000/00697_lr",
+  "record500": "records500/00000/00697_hr"
+}

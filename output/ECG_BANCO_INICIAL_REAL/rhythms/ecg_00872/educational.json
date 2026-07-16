@@ -1,0 +1,13 @@
+{
+  "rhythmId": "ecg_00872",
+  "status": "candidate",
+  "findings": [
+    {
+      "label": "Candidato de fibrilación auricular pendiente de revisión."
+    },
+    {
+      "label": "Fibrilación auricular con bajo voltaje en derivaciones de miembros"
+    }
+  ],
+  "questions": []
+}

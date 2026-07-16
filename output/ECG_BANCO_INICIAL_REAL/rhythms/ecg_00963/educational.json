@@ -1,0 +1,13 @@
+{
+  "rhythmId": "ecg_00963",
+  "status": "candidate",
+  "findings": [
+    {
+      "label": "Candidato de fibrilación auricular pendiente de revisión."
+    },
+    {
+      "label": "FA con respuesta ventricular rápida y bajo voltaje"
+    }
+  ],
+  "questions": []
+}

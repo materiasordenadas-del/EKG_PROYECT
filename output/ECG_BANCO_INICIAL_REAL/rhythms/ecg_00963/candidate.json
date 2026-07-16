@@ -1,1 +1,9 @@
-{"id":"ecg_00963","ecgId":963,"targetCode":"AFIB","status":"pending_generation","source":"PTB-XL 1.0.3"}
+{
+  "id": "ecg_00963",
+  "ecgId": 963,
+  "title": "FA · ECG 963",
+  "group": "FA con variación educativa",
+  "summary": "FA con respuesta ventricular rápida y bajo voltaje",
+  "record100": "records100/00000/00963_lr",
+  "record500": "records500/00000/00963_hr"
+}

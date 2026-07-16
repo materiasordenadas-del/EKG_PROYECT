@@ -1,0 +1,13 @@
+{
+  "rhythmId": "ecg_00697",
+  "status": "candidate",
+  "findings": [
+    {
+      "label": "Candidato de fibrilación auricular pendiente de revisión."
+    },
+    {
+      "label": "Fibrilación auricular; eje izquierdo limítrofe; sin otra patología definida"
+    }
+  ],
+  "questions": []
+}

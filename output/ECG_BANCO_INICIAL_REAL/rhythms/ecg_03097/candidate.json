@@ -1,1 +1,9 @@
-{"id":"ecg_03097","ecgId":3097,"targetCode":"AFIB","status":"pending_generation","source":"PTB-XL 1.0.3"}
+{
+  "id": "ecg_03097",
+  "ecgId": 3097,
+  "title": "FA · ECG 3097",
+  "group": "FA con variación educativa",
+  "summary": "FA con respuesta ventricular rápida y cambios ST-T inespecíficos",
+  "record100": "records100/03000/03097_lr",
+  "record500": "records500/03000/03097_hr"
+}

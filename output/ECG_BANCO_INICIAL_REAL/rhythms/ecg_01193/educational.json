@@ -1,0 +1,13 @@
+{
+  "rhythmId": "ecg_01193",
+  "status": "candidate",
+  "findings": [
+    {
+      "label": "Candidato de fibrilación auricular pendiente de revisión."
+    },
+    {
+      "label": "FA con discreto aplanamiento de onda T"
+    }
+  ],
+  "questions": []
+}

@@ -1,1 +1,9 @@
-{"id":"ecg_02125","ecgId":2125,"targetCode":"AFIB","status":"pending_generation","source":"PTB-XL 1.0.3"}
+{
+  "id": "ecg_02125",
+  "ecgId": 2125,
+  "title": "FA · ECG 2125",
+  "group": "FA con variación educativa",
+  "summary": "FA con respuesta ventricular rápida y cambios ST-T no diagnósticos",
+  "record100": "records100/02000/02125_lr",
+  "record500": "records500/02000/02125_hr"
+}
