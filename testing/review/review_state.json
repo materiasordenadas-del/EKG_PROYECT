@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0",
+  "rhythmId": "atrial_fibrillation",
+  "allowedStatuses": ["pending", "approved", "rejected", "reserved"],
+  "approvedCandidateId": null,
+  "requiredChecks": [
+    "twelveLeadsPresent",
+    "durationTenSeconds",
+    "sampleRate500Hz",
+    "rrIrregularityVisible",
+    "consistentPWavesAbsent",
+    "fibrillatoryActivityCompatible",
+    "artifactAcceptable",
+    "concomitantFindingsDocumented"
+  ],
+  "candidates": [
+    {"candidateId":"afib_00330","ecgId":330,"status":"pending","reviewedByHuman":false,"notes":""},
+    {"candidateId":"afib_00697","ecgId":697,"status":"pending","reviewedByHuman":false,"notes":""},
+    {"candidateId":"afib_00759","ecgId":759,"status":"pending","reviewedByHuman":false,"notes":""},
+    {"candidateId":"afib_00866","ecgId":866,"status":"pending","reviewedByHuman":false,"notes":""},
+    {"candidateId":"afib_00872","ecgId":872,"status":"pending","reviewedByHuman":false,"notes":""},
+    {"candidateId":"afib_00908","ecgId":908,"status":"pending","reviewedByHuman":false,"notes":""},
+    {"candidateId":"afib_00963","ecgId":963,"status":"pending","reviewedByHuman":false,"notes":""},
+    {"candidateId":"afib_01193","ecgId":1193,"status":"pending","reviewedByHuman":false,"notes":""},
+    {"candidateId":"afib_01508","ecgId":1508,"status":"pending","reviewedByHuman":false,"notes":""},
+    {"candidateId":"afib_01755","ecgId":1755,"status":"pending","reviewedByHuman":false,"notes":""},
+    {"candidateId":"afib_01858","ecgId":1858,"status":"pending","reviewedByHuman":false,"notes":""},
+    {"candidateId":"afib_01889","ecgId":1889,"status":"pending","reviewedByHuman":false,"notes":""},
+    {"candidateId":"afib_02032","ecgId":2032,"status":"pending","reviewedByHuman":false,"notes":""},
+    {"candidateId":"afib_02035","ecgId":2035,"status":"pending","reviewedByHuman":false,"notes":""},
+    {"candidateId":"afib_02078","ecgId":2078,"status":"pending","reviewedByHuman":false,"notes":""},
+    {"candidateId":"afib_02125","ecgId":2125,"status":"pending","reviewedByHuman":false,"notes":""},
+    {"candidateId":"afib_02240","ecgId":2240,"status":"pending","reviewedByHuman":false,"notes":""},
+    {"candidateId":"afib_02304","ecgId":2304,"status":"pending","reviewedByHuman":false,"notes":""},
+    {"candidateId":"afib_02673","ecgId":2673,"status":"pending","reviewedByHuman":false,"notes":""},
+    {"candidateId":"afib_03097","ecgId":3097,"status":"pending","reviewedByHuman":false,"notes":""}
+  ]
+}
