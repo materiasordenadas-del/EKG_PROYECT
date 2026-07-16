@@ -3,8 +3,3 @@ __pycache__/
 *.pyc
 *.bak
 *.pre_*.bak
-
-# Artefactos regenerables de la raíz de pruebas
-testing/cache/
-testing/candidates/
-testing/ABRIR_REVISION.html
