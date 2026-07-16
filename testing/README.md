@@ -1,103 +1,98 @@
-# Raíz de pruebas ECG
+# Laboratorio general de pruebas ECG
 
-`testing/` es un entorno aislado para descargar, revisar y clasificar candidatos antes de incorporarlos al banco publicado.
+`testing/` es el entorno general y aislado para probar candidatos, funciones de interfaz y cambios educativos antes de incorporarlos a la aplicación estable.
 
 ## Regla principal
 
-Nada dentro de `testing/` puede modificar, borrar o sobrescribir `output/ECG_BANCO_INICIAL_REAL`.
+Nada dentro de `testing/` puede modificar, borrar, sobrescribir ni promover automáticamente contenido de `output/ECG_BANCO_INICIAL_REAL`.
 
-## Probar los 20 ECG de fibrilación auricular
+## Acceso online
 
-En Windows, desde la raíz del repositorio:
+GitHub Actions construye un único sitio con dos entradas:
 
-1. Haga doble clic en `GENERAR_PRUEBAS_AFIB.bat`.
-2. El archivo instalará o comprobará `wfdb` y `numpy`.
-3. Descargará únicamente los 20 registros PTB-XL definidos en `testing/catalog/afib_candidates.json`.
-4. Validará que cada señal tenga 12 derivaciones, 500 Hz y aproximadamente 10 segundos.
-5. Creará `testing/ABRIR_REVISION.html` con todas las señales incrustadas.
-6. Abrirá el visor automáticamente.
+```text
+/                  Aplicación estable
+/testing/          Portal general de pruebas
+/testing/ABRIR_REVISION.html   Primer módulo: candidatos AFIB
+```
 
-Después de la primera generación, `testing/ABRIR_REVISION.html` puede abrirse directamente con doble clic. No requiere servidor, Internet ni archivo `.bat` para visualizar los ECG ya preparados.
+El flujo `.github/workflows/deploy-pages.yml`:
 
-## Funciones del visor
+1. Descarga el repositorio.
+2. Instala las dependencias de Python.
+3. Ejecuta `tools/build_test_candidates.py`.
+4. Descarga desde PTB-XL las señales originales a 500 Hz.
+5. Genera el visor AFIB autocontenido con los 20 ECG incrustados.
+6. Publica producción y testing dentro del mismo sitio de GitHub Pages.
 
-- Selector de los 20 candidatos y navegación anterior/siguiente.
-- Disposición secuencial 3 × 4 de 12 derivaciones.
-- Tira larga de DII con los 10 segundos completos.
-- Señal original de 500 Hz.
-- Escala fija de revisión: 25 mm/s y 10 mm/mV.
-- Informe original, códigos SCP, validación y calidad técnica.
-- Estados `pending`, `approved`, `rejected` y `reserved`.
-- Lista de comprobaciones clínicas y técnicas.
-- Notas por candidato.
-- Persistencia local en el navegador.
-- Exportación e importación de `review_state.json`.
+En la configuración de GitHub Pages debe seleccionarse **GitHub Actions** como fuente de publicación. No debe alternarse entre una rama estable y una rama de candidatos.
 
-Un HTML abierto con doble clic no puede modificar archivos del repositorio. Las decisiones se guardan en `localStorage`; use **Exportar review_state.json** para obtener un archivo que pueda sustituir posteriormente a `testing/review/review_state.json` tras una revisión consciente.
-
-## Archivos generados localmente
+## Organización general
 
 ```text
 testing/
-├── ABRIR_REVISION.html
-├── candidates/
-│   └── atrial_fibrillation/
-│       └── afib_00330/
-│           ├── source_hr.hea
-│           ├── source_hr.dat
-│           ├── signal_500hz.json
-│           └── metadata.json
+├── index.html                         Portal general del laboratorio
+├── ABRIR_REVISION.html                Artefacto generado del módulo AFIB
 ├── catalog/
 │   └── afib_candidates.json
-└── review/
-    └── review_state.json
+├── review/
+│   └── review_state.json
+├── candidates/
+│   └── atrial_fibrillation/           Señales locales regenerables
+├── reports/                           Informes futuros
+└── modules/                           Espacio reservado para nuevos módulos
 ```
 
-Los archivos de señales y el HTML autónomo no se versionan porque pueden regenerarse desde PhysioNet usando el manifiesto.
+La fibrilación auricular es el primer módulo, pero `testing/` no está limitado a ese ritmo. Los siguientes módulos pueden utilizar la misma raíz para flutter, bloqueos AV, extrasístoles, taquicardias, nuevos candidatos, pruebas topográficas o pruebas de interfaz.
 
-## Uso por terminal
+## Módulo AFIB
 
-Construcción completa:
+El visor permite:
+
+- Elegir entre 20 candidatos PTB-XL.
+- Navegar al ECG anterior o siguiente.
+- Revisar las 12 derivaciones y DII largo.
+- Mantener 500 Hz, 25 mm/s y 10 mm/mV.
+- Consultar informe, códigos SCP, validación y calidad técnica.
+- Marcar `pending`, `approved`, `rejected` o `reserved`.
+- Completar una lista de comprobaciones.
+- Guardar notas en el navegador.
+- Importar o exportar `review_state.json`.
+
+Las decisiones se guardan en `localStorage`. El navegador no modifica directamente el repositorio; para versionar una revisión debe exportarse `review_state.json` y reemplazarse conscientemente el archivo correspondiente.
+
+## Uso local opcional
+
+En Windows puede ejecutarse:
+
+```text
+GENERAR_PRUEBAS_AFIB.bat
+```
+
+Por terminal:
 
 ```bash
 python tools/build_test_candidates.py
 ```
 
-Reconstruir todo desde cero:
+Reconstrucción completa:
 
 ```bash
 python tools/build_test_candidates.py --force
 ```
 
-Reparar o descargar un candidato concreto y después regenerar el visor completo:
+Un candidato concreto:
 
 ```bash
 python tools/build_test_candidates.py --only afib_00330
 ```
 
-Reconstruir únicamente el HTML cuando las 20 señales ya existen:
-
-```bash
-python tools/build_test_candidates.py --viewer-only
-```
-
-## Flujo de revisión
-
-1. Leer `catalog/afib_candidates.json`.
-2. Descargar la señal original PTB-XL de 500 Hz.
-3. Revisar visualmente las 12 derivaciones y DII largo.
-4. Comprobar irregularidad RR, ausencia de ondas P consistentes, actividad fibrilatoria y artefacto.
-5. Documentar los hallazgos concomitantes.
-6. Marcar el candidato como aprobado, rechazado o reservado.
-7. Exportar `review_state.json`.
-8. Promover a producción solo mediante una acción explícita posterior.
-
 ## Reglas de integridad
 
 - No dibujar, suavizar, normalizar, corregir ni mezclar ondas.
 - Mantener el `ecgId` original de PTB-XL.
-- Usar exclusivamente la señal original de 500 Hz durante la revisión.
+- Usar la señal original de 500 Hz durante la revisión.
 - No aprobar automáticamente ningún registro.
-- No interpretar la preselección por metadatos como validación clínica final.
+- No considerar la preselección por metadatos como validación clínica final.
 - El ECG 8215 permanece en producción y está excluido de los 20 candidatos.
-- El visor es una herramienta educativa y no está destinado al diagnóstico ni a decisiones clínicas.
+- El laboratorio es educativo y no está destinado al diagnóstico ni a decisiones clínicas.

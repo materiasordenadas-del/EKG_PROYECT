@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Laboratorio de pruebas ECG</title>
+  <style>
+    :root{color-scheme:light dark;--bg:#eef2f5;--card:#fff;--ink:#17232d;--muted:#64717d;--line:#d8dfe5;--accent:#145f8c;--active:#e2f2ea;--active-ink:#155b39}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif}header{background:#10212c;color:#fff;padding:30px 20px}header>div,main{max-width:1120px;margin:auto}h1{margin:0 0 8px;font-size:clamp(25px,4vw,38px)}header p{margin:0;color:#cbd7df;line-height:1.5}main{padding:24px 18px 50px}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}.button{display:inline-block;text-decoration:none;border:1px solid #aeb9c2;border-radius:8px;padding:10px 14px;background:#fff;color:#19303f;font-weight:700}.button.primary{background:var(--accent);border-color:var(--accent);color:#fff}.section-title{margin:26px 0 12px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:15px}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;box-shadow:0 3px 12px #23354412}.card h2{font-size:18px;margin:0 0 8px}.card p{margin:0 0 15px;color:var(--muted);line-height:1.5}.meta{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px}.tag{font-size:12px;padding:5px 8px;border-radius:999px;background:#e9eef2;color:#43515c}.tag.active{background:var(--active);color:var(--active-ink);font-weight:700}.disabled{opacity:.62}.notice{margin-top:24px;padding:15px;border-left:4px solid var(--accent);background:#fff;border-radius:6px;color:#44515c;line-height:1.5}@media(prefers-color-scheme:dark){:root{--bg:#0e151a;--card:#172127;--ink:#e6edf2;--muted:#aab5bd;--line:#344149}.button{background:#172127;color:#e6edf2;border-color:#50606a}.tag{background:#29353d;color:#cdd6dc}.notice{background:#172127;color:#c5cfd5}}
+  </style>
+</head>
+<body>
+  <header><div><h1>Laboratorio de pruebas ECG</h1><p>Entorno general y separado de producción para revisar candidatos, probar funciones y validar cambios antes de incorporarlos a la aplicación estable.</p></div></header>
+  <main>
+    <nav class="toolbar" aria-label="Navegación principal">
+      <a class="button" href="../">← Aplicación estable</a>
+      <a class="button primary" href="ABRIR_REVISION.html">Abrir revisión AFIB</a>
+    </nav>
+
+    <h2 class="section-title">Módulos disponibles</h2>
+    <section class="grid">
+      <article class="card">
+        <h2>Fibrilación auricular</h2>
+        <p>Revisión de 20 candidatos reales de PTB-XL con doce derivaciones, diez segundos y señal original a 500 Hz.</p>
+        <div class="meta"><span class="tag active">Disponible</span><span class="tag">20 ECG</span><span class="tag">Revisión clínica</span></div>
+        <a class="button primary" href="ABRIR_REVISION.html">Entrar al módulo</a>
+      </article>
+
+      <article class="card disabled" aria-disabled="true">
+        <h2>Otros ritmos</h2>
+        <p>Área reservada para futuros candidatos de flutter, bloqueos AV, extrasístoles, taquicardias y nuevos bancos.</p>
+        <div class="meta"><span class="tag">Próximamente</span></div>
+      </article>
+
+      <article class="card disabled" aria-disabled="true">
+        <h2>Pruebas de interfaz</h2>
+        <p>Área reservada para validar cuadrícula, escalas, animación, topografía, navegación y capas educativas.</p>
+        <div class="meta"><span class="tag">Próximamente</span></div>
+      </article>
+    </section>
+
+    <div class="notice"><strong>Separación de entornos:</strong> lo que se apruebe o descarte aquí no modifica automáticamente el banco de producción. La promoción de un ECG seguirá siendo una operación explícita.</div>
+  </main>
+</body>
+</html>
