@@ -92,10 +92,10 @@
         "164865005"
       ],
       "reviewSegment": {
-        "startSeconds": 54.0,
-        "endSeconds": 64.0,
+        "startSeconds": 53.0,
+        "endSeconds": 63.0,
         "method": "ventana técnica de 10 s con mayor actividad QRS en II, V1 y V5; requiere revisión visual",
-        "estimatedRateBpm": 247.9
+        "estimatedRateBpm": 246.4
       },
       "status": "pending_review"
     },
@@ -160,10 +160,10 @@
         "164895002"
       ],
       "reviewSegment": {
-        "startSeconds": 28.0,
-        "endSeconds": 38.0,
+        "startSeconds": 83.0,
+        "endSeconds": 93.0,
         "method": "ventana técnica de 10 s con mayor actividad QRS en II, V1 y V5; requiere revisión visual",
-        "estimatedRateBpm": 210.5
+        "estimatedRateBpm": 203.4
       },
       "status": "pending_review"
     },
@@ -177,10 +177,10 @@
         "164865005"
       ],
       "reviewSegment": {
-        "startSeconds": 24.0,
-        "endSeconds": 34.0,
+        "startSeconds": 88.0,
+        "endSeconds": 98.0,
         "method": "ventana técnica de 10 s con mayor actividad QRS en II, V1 y V5; requiere revisión visual",
-        "estimatedRateBpm": 195.4
+        "estimatedRateBpm": 199.3
       },
       "status": "pending_review"
     },
@@ -196,10 +196,10 @@
         "164889003"
       ],
       "reviewSegment": {
-        "startSeconds": 66.0,
-        "endSeconds": 76.0,
+        "startSeconds": 62.0,
+        "endSeconds": 72.0,
         "method": "ventana técnica de 10 s con mayor actividad QRS en II, V1 y V5; requiere revisión visual",
-        "estimatedRateBpm": 178.6
+        "estimatedRateBpm": 181.5
       },
       "status": "pending_review"
     },
@@ -212,10 +212,10 @@
         "164895002"
       ],
       "reviewSegment": {
-        "startSeconds": 40.0,
-        "endSeconds": 50.0,
+        "startSeconds": 22.0,
+        "endSeconds": 32.0,
         "method": "ventana técnica de 10 s con mayor actividad QRS en II, V1 y V5; requiere revisión visual",
-        "estimatedRateBpm": 191.1
+        "estimatedRateBpm": 193.5
       },
       "status": "pending_review"
     }

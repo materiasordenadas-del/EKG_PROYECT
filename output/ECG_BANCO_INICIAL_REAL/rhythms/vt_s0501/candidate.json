@@ -7,10 +7,10 @@
     "164895002"
   ],
   "reviewSegment": {
-    "startSeconds": 28.0,
-    "endSeconds": 38.0,
+    "startSeconds": 83.0,
+    "endSeconds": 93.0,
     "method": "ventana técnica de 10 s con mayor actividad QRS en II, V1 y V5; requiere revisión visual",
-    "estimatedRateBpm": 210.5
+    "estimatedRateBpm": 203.4
   },
   "status": "pending_review"
 }
