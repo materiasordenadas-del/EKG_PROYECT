@@ -1,0 +1,16 @@
+{
+  "id": "vt_s0541",
+  "sourceRecordId": "S0541",
+  "sourceSubset": "ptb",
+  "snomedCtCode": "164895002",
+  "diagnoses": [
+    "164895002"
+  ],
+  "reviewSegment": {
+    "startSeconds": 40.0,
+    "endSeconds": 50.0,
+    "method": "ventana técnica de 10 s con mayor actividad QRS en II, V1 y V5; requiere revisión visual",
+    "estimatedRateBpm": 191.1
+  },
+  "status": "pending_review"
+}

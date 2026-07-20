@@ -1,0 +1,13 @@
+{
+  "rhythmId": "vt_s0410",
+  "status": "candidate",
+  "diagnosis": "Taquicardia ventricular",
+  "reviewStatus": "pending_review",
+  "note": "Confirmar visualmente a 500 Hz; no asignar subtipo sin revisión humana.",
+  "findings": [
+    {
+      "label": "Buscar QRS ancho, disociación AV, capturas y fusiones."
+    }
+  ],
+  "questions": []
+}

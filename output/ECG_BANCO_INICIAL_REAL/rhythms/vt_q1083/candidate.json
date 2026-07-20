@@ -1,0 +1,19 @@
+{
+  "id": "vt_q1083",
+  "sourceRecordId": "Q1083",
+  "sourceSubset": "cpsc_2018_extra",
+  "snomedCtCode": "164895002",
+  "diagnoses": [
+    "63593006",
+    "164895002",
+    "428750005",
+    "428750005"
+  ],
+  "reviewSegment": {
+    "startSeconds": 34.0,
+    "endSeconds": 44.0,
+    "method": "ventana técnica de 10 s con mayor actividad QRS en II, V1 y V5; requiere revisión visual",
+    "estimatedRateBpm": 168.1
+  },
+  "status": "pending_review"
+}

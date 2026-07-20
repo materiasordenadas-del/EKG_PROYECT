@@ -1,0 +1,223 @@
+{
+  "schemaVersion": "1.1",
+  "dataset": {
+    "name": "PhysioNet/CinC Challenge 2020",
+    "version": "1.0.2",
+    "license": "CC BY 4.0"
+  },
+  "target": {
+    "diagnosis": "Taquicardia ventricular",
+    "snomedCtCode": "164895002"
+  },
+  "selection": {
+    "records": [
+      "Q1083",
+      "S0316",
+      "S0354",
+      "S0361",
+      "S0410",
+      "S0425",
+      "S0426",
+      "S0501",
+      "S0530",
+      "S0533",
+      "S0541"
+    ],
+    "windowSeconds": 10,
+    "manualWaveformEditing": false,
+    "reviewRequired": true
+  },
+  "candidates": [
+    {
+      "id": "vt_q1083",
+      "sourceRecordId": "Q1083",
+      "sourceSubset": "cpsc_2018_extra",
+      "snomedCtCode": "164895002",
+      "diagnoses": [
+        "63593006",
+        "164895002",
+        "428750005",
+        "428750005"
+      ],
+      "reviewSegment": {
+        "startSeconds": 34.0,
+        "endSeconds": 44.0,
+        "method": "ventana técnica de 10 s con mayor actividad QRS en II, V1 y V5; requiere revisión visual",
+        "estimatedRateBpm": 168.1
+      },
+      "status": "pending_review"
+    },
+    {
+      "id": "vt_s0316",
+      "sourceRecordId": "S0316",
+      "sourceSubset": "ptb",
+      "snomedCtCode": "164895002",
+      "diagnoses": [
+        "164895002",
+        "164865005"
+      ],
+      "reviewSegment": {
+        "startSeconds": 71.0,
+        "endSeconds": 81.0,
+        "method": "ventana técnica de 10 s con mayor actividad QRS en II, V1 y V5; requiere revisión visual",
+        "estimatedRateBpm": 196.1
+      },
+      "status": "pending_review"
+    },
+    {
+      "id": "vt_s0354",
+      "sourceRecordId": "S0354",
+      "sourceSubset": "ptb",
+      "snomedCtCode": "164895002",
+      "diagnoses": [
+        "164895002",
+        "53741008",
+        "164865005"
+      ],
+      "reviewSegment": {
+        "startSeconds": 14.0,
+        "endSeconds": 24.0,
+        "method": "ventana técnica de 10 s con mayor actividad QRS en II, V1 y V5; requiere revisión visual",
+        "estimatedRateBpm": 198.0
+      },
+      "status": "pending_review"
+    },
+    {
+      "id": "vt_s0361",
+      "sourceRecordId": "S0361",
+      "sourceSubset": "ptb",
+      "snomedCtCode": "164895002",
+      "diagnoses": [
+        "164895002",
+        "164865005"
+      ],
+      "reviewSegment": {
+        "startSeconds": 54.0,
+        "endSeconds": 64.0,
+        "method": "ventana técnica de 10 s con mayor actividad QRS en II, V1 y V5; requiere revisión visual",
+        "estimatedRateBpm": 247.9
+      },
+      "status": "pending_review"
+    },
+    {
+      "id": "vt_s0410",
+      "sourceRecordId": "S0410",
+      "sourceSubset": "ptb",
+      "snomedCtCode": "164895002",
+      "diagnoses": [
+        "164895002",
+        "53741008",
+        "164865005"
+      ],
+      "reviewSegment": {
+        "startSeconds": 14.0,
+        "endSeconds": 24.0,
+        "method": "ventana técnica de 10 s con mayor actividad QRS en II, V1 y V5; requiere revisión visual",
+        "estimatedRateBpm": 212.0
+      },
+      "status": "pending_review"
+    },
+    {
+      "id": "vt_s0425",
+      "sourceRecordId": "S0425",
+      "sourceSubset": "ptb",
+      "snomedCtCode": "164895002",
+      "diagnoses": [
+        "164895002",
+        "164865005"
+      ],
+      "reviewSegment": {
+        "startSeconds": 69.0,
+        "endSeconds": 79.0,
+        "method": "ventana técnica de 10 s con mayor actividad QRS en II, V1 y V5; requiere revisión visual",
+        "estimatedRateBpm": 202.7
+      },
+      "status": "pending_review"
+    },
+    {
+      "id": "vt_s0426",
+      "sourceRecordId": "S0426",
+      "sourceSubset": "ptb",
+      "snomedCtCode": "164895002",
+      "diagnoses": [
+        "164895002",
+        "164865005"
+      ],
+      "reviewSegment": {
+        "startSeconds": 93.0,
+        "endSeconds": 103.0,
+        "method": "ventana técnica de 10 s con mayor actividad QRS en II, V1 y V5; requiere revisión visual",
+        "estimatedRateBpm": 83.2
+      },
+      "status": "pending_review"
+    },
+    {
+      "id": "vt_s0501",
+      "sourceRecordId": "S0501",
+      "sourceSubset": "ptb",
+      "snomedCtCode": "164895002",
+      "diagnoses": [
+        "164895002"
+      ],
+      "reviewSegment": {
+        "startSeconds": 28.0,
+        "endSeconds": 38.0,
+        "method": "ventana técnica de 10 s con mayor actividad QRS en II, V1 y V5; requiere revisión visual",
+        "estimatedRateBpm": 210.5
+      },
+      "status": "pending_review"
+    },
+    {
+      "id": "vt_s0530",
+      "sourceRecordId": "S0530",
+      "sourceSubset": "ptb",
+      "snomedCtCode": "164895002",
+      "diagnoses": [
+        "164895002",
+        "164865005"
+      ],
+      "reviewSegment": {
+        "startSeconds": 24.0,
+        "endSeconds": 34.0,
+        "method": "ventana técnica de 10 s con mayor actividad QRS en II, V1 y V5; requiere revisión visual",
+        "estimatedRateBpm": 195.4
+      },
+      "status": "pending_review"
+    },
+    {
+      "id": "vt_s0533",
+      "sourceRecordId": "S0533",
+      "sourceSubset": "ptb",
+      "snomedCtCode": "164895002",
+      "diagnoses": [
+        "164895002",
+        "164896001",
+        "164865005",
+        "164889003"
+      ],
+      "reviewSegment": {
+        "startSeconds": 66.0,
+        "endSeconds": 76.0,
+        "method": "ventana técnica de 10 s con mayor actividad QRS en II, V1 y V5; requiere revisión visual",
+        "estimatedRateBpm": 178.6
+      },
+      "status": "pending_review"
+    },
+    {
+      "id": "vt_s0541",
+      "sourceRecordId": "S0541",
+      "sourceSubset": "ptb",
+      "snomedCtCode": "164895002",
+      "diagnoses": [
+        "164895002"
+      ],
+      "reviewSegment": {
+        "startSeconds": 40.0,
+        "endSeconds": 50.0,
+        "method": "ventana técnica de 10 s con mayor actividad QRS en II, V1 y V5; requiere revisión visual",
+        "estimatedRateBpm": 191.1
+      },
+      "status": "pending_review"
+    }
+  ]
+}
