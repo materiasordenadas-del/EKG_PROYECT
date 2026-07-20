@@ -2,11 +2,8 @@ name: Poblar rama pruebas con ECG de taquicardia ventricular
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - .github/workflows/populate-pruebas.yml
+  schedule:
+    - cron: '*/5 * * * *'
 
 permissions:
   contents: write
