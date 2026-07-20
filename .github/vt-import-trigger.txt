@@ -1,1 +1,2 @@
 Disparador controlado para poblar la rama pruebas con ECG reales de taquicardia ventricular.
+Ejecución curada: excluye frecuencia insuficiente y fibrilación ventricular concomitante.
