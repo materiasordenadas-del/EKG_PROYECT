@@ -17,15 +17,25 @@
       "S0361",
       "S0410",
       "S0425",
-      "S0426",
       "S0501",
       "S0530",
-      "S0533",
       "S0541"
     ],
     "windowSeconds": 10,
     "manualWaveformEditing": false,
-    "reviewRequired": true
+    "reviewRequired": true,
+    "excludedRecords": [
+      {
+        "recordId": "S0426",
+        "reason": "La ventana automática más activa tuvo una frecuencia estimada de 83.2 lpm; no se conserva como candidato de taquicardia sin revisión manual del registro completo.",
+        "criterion": "estimatedRateBpm < 120"
+      },
+      {
+        "recordId": "S0533",
+        "reason": "El encabezado incluye fibrilación ventricular (SNOMED CT 164896001) además de taquicardia ventricular; se excluye para evitar un candidato mixto de alto riesgo.",
+        "criterion": "concomitant ventricular fibrillation"
+      }
+    ]
   },
   "candidates": [
     {
@@ -135,23 +145,6 @@
       "status": "pending_review"
     },
     {
-      "id": "vt_s0426",
-      "sourceRecordId": "S0426",
-      "sourceSubset": "ptb",
-      "snomedCtCode": "164895002",
-      "diagnoses": [
-        "164895002",
-        "164865005"
-      ],
-      "reviewSegment": {
-        "startSeconds": 93.0,
-        "endSeconds": 103.0,
-        "method": "ventana técnica de 10 s con mayor actividad QRS en II, V1 y V5; requiere revisión visual",
-        "estimatedRateBpm": 83.2
-      },
-      "status": "pending_review"
-    },
-    {
       "id": "vt_s0501",
       "sourceRecordId": "S0501",
       "sourceSubset": "ptb",
@@ -181,25 +174,6 @@
         "endSeconds": 98.0,
         "method": "ventana técnica de 10 s con mayor actividad QRS en II, V1 y V5; requiere revisión visual",
         "estimatedRateBpm": 199.3
-      },
-      "status": "pending_review"
-    },
-    {
-      "id": "vt_s0533",
-      "sourceRecordId": "S0533",
-      "sourceSubset": "ptb",
-      "snomedCtCode": "164895002",
-      "diagnoses": [
-        "164895002",
-        "164896001",
-        "164865005",
-        "164889003"
-      ],
-      "reviewSegment": {
-        "startSeconds": 62.0,
-        "endSeconds": 72.0,
-        "method": "ventana técnica de 10 s con mayor actividad QRS en II, V1 y V5; requiere revisión visual",
-        "estimatedRateBpm": 181.5
       },
       "status": "pending_review"
     },

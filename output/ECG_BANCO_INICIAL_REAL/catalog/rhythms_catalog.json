@@ -350,19 +350,6 @@
     "sourceDataset": "ptb"
   },
   {
-    "id": "vt_s0426",
-    "title": "[PRUEBA] Taquicardia ventricular · S0426",
-    "targetCode": "VT",
-    "snomedCtCode": "164895002",
-    "ecgId": 426,
-    "sourceRecordId": "S0426",
-    "sampleRateHz": 100,
-    "durationSeconds": 10.0,
-    "path": "rhythms/vt_s0426/signal.json",
-    "status": "candidate",
-    "sourceDataset": "ptb"
-  },
-  {
     "id": "vt_s0501",
     "title": "[PRUEBA] Taquicardia ventricular · S0501",
     "targetCode": "VT",
@@ -385,19 +372,6 @@
     "sampleRateHz": 100,
     "durationSeconds": 10.0,
     "path": "rhythms/vt_s0530/signal.json",
-    "status": "candidate",
-    "sourceDataset": "ptb"
-  },
-  {
-    "id": "vt_s0533",
-    "title": "[PRUEBA] Taquicardia ventricular · S0533",
-    "targetCode": "VT",
-    "snomedCtCode": "164895002",
-    "ecgId": 533,
-    "sourceRecordId": "S0533",
-    "sampleRateHz": 100,
-    "durationSeconds": 10.0,
-    "path": "rhythms/vt_s0533/signal.json",
     "status": "candidate",
     "sourceDataset": "ptb"
   },
