@@ -7,12 +7,16 @@ on:
       - main
     paths:
       - .github/workflows/populate-pruebas.yml
+  issues:
+    types:
+      - opened
 
 permissions:
   contents: write
 
 jobs:
   populate:
+    if: github.event_name != 'issues' || github.event.issue.title == '[AUTOMATION] Poblar TV en pruebas'
     runs-on: ubuntu-latest
     timeout-minutes: 120
     steps:
