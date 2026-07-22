@@ -1,0 +1,53 @@
+name: Poblar SCA STEMI y NSTEMI en pruebas
+
+on:
+  workflow_dispatch:
+    inputs:
+      per_group:
+        description: Candidatos por grupo
+        required: true
+        default: "5"
+        type: choice
+        options:
+          - "3"
+          - "5"
+          - "8"
+          - "10"
+
+permissions:
+  contents: write
+
+jobs:
+  populate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Descargar rama pruebas
+        uses: actions/checkout@v4
+        with:
+          ref: pruebas
+          fetch-depth: 0
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: python -m pip install --disable-pip-version-check -r requirements.txt
+
+      - name: Generar candidatos SCA
+        run: python tools/populate_sca_pruebas.py --per-group "${{ inputs.per_group }}"
+
+      - name: Guardar candidatos en pruebas
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add output/ECG_BANCO_INICIAL_REAL
+          if git diff --cached --quiet; then
+            echo "No hubo cambios para guardar."
+            exit 0
+          fi
+          git commit -m "Poblar candidatos STEMI y NSTEMI en pruebas"
+          git push origin HEAD:pruebas
