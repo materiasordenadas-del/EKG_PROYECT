@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "1.0",
+  "status": "targets_registered",
+  "dataset": {
+    "name": "PTB-XL",
+    "version": "1.0.3"
+  },
+  "targets": [
+    {
+      "id": "sca_stemi",
+      "title": "STEMI",
+      "displayLabel": "STEMI — patrón ECG compatible",
+      "targetCode": "SCA_STEMI",
+      "candidateStatus": "pending_generation",
+      "selection": {
+        "miLocalizationCodes": ["AMI", "ASMI", "ALMI", "IMI", "ILMI", "IPMI", "IPLMI", "LMI", "PMI"],
+        "requiresAny": ["infarction_stadium=Stadium I/Stadium I-II", "STE_"],
+        "excludes": ["INJAS", "INJAL", "INJIN", "INJLA", "INJIL", "PACE", "WPW"]
+      },
+      "reviewRequirements": [
+        "Revisar señal original a 500 Hz",
+        "Confirmar elevación del ST en derivaciones contiguas",
+        "Buscar cambios recíprocos",
+        "Definir territorio y descartar imitadores"
+      ],
+      "clinicalLimit": "Un patrón compatible con STEMI requiere integración clínica y exclusión de imitadores; no es un diagnóstico automático."
+    },
+    {
+      "id": "sca_nstemi",
+      "title": "NSTEMI",
+      "displayLabel": "NSTEMI — patrón ECG compatible",
+      "targetCode": "SCA_NSTEMI",
+      "candidateStatus": "pending_generation",
+      "selection": {
+        "requiresAny": ["INJAS", "INJAL", "INJIN", "INJLA", "INJIL"],
+        "excludes": ["STE_", "PACE", "WPW", "CLBBB"]
+      },
+      "reviewRequirements": [
+        "Revisar señal original a 500 Hz",
+        "Buscar depresión del ST y/o inversión dinámica de T",
+        "Correlacionar obligatoriamente con clínica y troponina"
+      ],
+      "clinicalLimit": "El ECG aislado no confirma NSTEMI. El diagnóstico requiere síntomas compatibles, dinámica de troponina y ausencia de elevación persistente del ST."
+    }
+  ],
+  "signalPolicy": {
+    "manualWaveformEditing": false,
+    "fabricatedSignals": false,
+    "reviewRequired": true
+  }
+}
