@@ -1,0 +1,16 @@
+{
+  "rhythmId": "stemi_ecg_11839",
+  "status": "candidate",
+  "diagnosis": "STEMI",
+  "reviewStatus": "pending_review",
+  "note": "Candidato con patrón compatible con STEMI. Debe confirmarse mediante revisión clínica humana; el ECG aislado no sustituye la evaluación del síndrome coronario agudo.",
+  "findings": [
+    {
+      "label": "Confirmar elevación del ST en derivaciones contiguas y cambios recíprocos."
+    },
+    {
+      "label": "Definir territorio y descartar imitadores antes de aprobar."
+    }
+  ],
+  "questions": []
+}

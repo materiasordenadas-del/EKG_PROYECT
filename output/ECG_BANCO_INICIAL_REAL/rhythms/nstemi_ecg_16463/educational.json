@@ -1,0 +1,16 @@
+{
+  "rhythmId": "nstemi_ecg_16463",
+  "status": "candidate",
+  "diagnosis": "NSTEMI (patrón ECG compatible)",
+  "reviewStatus": "pending_review",
+  "note": "Candidato con lesión/isquemia subendocárdica compatible. NSTEMI no puede confirmarse con ECG aislado: requiere síntomas, troponina con dinámica y exclusión de elevación persistente del ST.",
+  "findings": [
+    {
+      "label": "Buscar depresión del ST y/o inversión dinámica de T en derivaciones contiguas."
+    },
+    {
+      "label": "No aprobar como NSTEMI sin correlación con troponina y clínica."
+    }
+  ],
+  "questions": []
+}

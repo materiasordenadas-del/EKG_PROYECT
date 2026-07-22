@@ -1,0 +1,23 @@
+{
+  "id": "nstemi_ecg_06751",
+  "group": "nstemi",
+  "ecgId": 6751,
+  "targetCode": "SCA_NSTEMI",
+  "selectionScore": 50.0,
+  "evidence": {
+    "scpCodes": [
+      "INJAL",
+      "INJAS",
+      "INJIN",
+      "SR"
+    ],
+    "infarctionStages": [
+      "unknown"
+    ],
+    "hasMiLocalizationCode": false,
+    "hasSubendocardialInjuryCode": true,
+    "hasAcuteInfarctionStage": false,
+    "hasNonSpecificStElevationCode": false
+  },
+  "status": "pending_review"
+}

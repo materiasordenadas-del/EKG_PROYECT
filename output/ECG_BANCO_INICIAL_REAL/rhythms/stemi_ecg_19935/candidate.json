@@ -1,0 +1,25 @@
+{
+  "id": "stemi_ecg_19935",
+  "group": "stemi",
+  "ecgId": 19935,
+  "targetCode": "SCA_STEMI",
+  "selectionScore": 56.0,
+  "evidence": {
+    "scpCodes": [
+      "ABQRS",
+      "ASMI",
+      "IMI",
+      "ISCAL",
+      "IVCD",
+      "SR"
+    ],
+    "infarctionStages": [
+      "stadium i"
+    ],
+    "hasMiLocalizationCode": true,
+    "hasSubendocardialInjuryCode": false,
+    "hasAcuteInfarctionStage": true,
+    "hasNonSpecificStElevationCode": false
+  },
+  "status": "pending_review"
+}

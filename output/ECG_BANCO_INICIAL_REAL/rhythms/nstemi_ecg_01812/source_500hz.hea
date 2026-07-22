@@ -1,0 +1,13 @@
+source_500hz 12 500 5000
+source_500hz.dat 16 1000.0(0)/mV 16 0 -55 54954 0 I
+source_500hz.dat 16 1000.0(0)/mV 16 0 65 2609 0 II
+source_500hz.dat 16 1000.0(0)/mV 16 0 120 13171 0 III
+source_500hz.dat 16 1000.0(0)/mV 16 0 -5 3612 0 AVR
+source_500hz.dat 16 1000.0(0)/mV 16 0 -88 53829 0 AVL
+source_500hz.dat 16 1000.0(0)/mV 16 0 92 7671 0 AVF
+source_500hz.dat 16 1000.0(0)/mV 16 0 130 5206 0 V1
+source_500hz.dat 16 1000.0(0)/mV 16 0 90 54485 0 V2
+source_500hz.dat 16 1000.0(0)/mV 16 0 -200 53621 0 V3
+source_500hz.dat 16 1000.0(0)/mV 16 0 45 55747 0 V4
+source_500hz.dat 16 1000.0(0)/mV 16 0 -135 46239 0 V5
+source_500hz.dat 16 1000.0(0)/mV 16 0 285 9192 0 V6

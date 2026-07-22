@@ -1,0 +1,22 @@
+{
+  "id": "nstemi_ecg_16463",
+  "group": "nstemi",
+  "ecgId": 16463,
+  "targetCode": "SCA_NSTEMI",
+  "selectionScore": 55.0,
+  "evidence": {
+    "scpCodes": [
+      "INJAL",
+      "INJAS",
+      "SR"
+    ],
+    "infarctionStages": [
+      "unknown"
+    ],
+    "hasMiLocalizationCode": false,
+    "hasSubendocardialInjuryCode": true,
+    "hasAcuteInfarctionStage": false,
+    "hasNonSpecificStElevationCode": false
+  },
+  "status": "pending_review"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "stemi_ecg_03582",
+  "group": "stemi",
+  "ecgId": 3582,
+  "targetCode": "SCA_STEMI",
+  "selectionScore": 56.0,
+  "evidence": {
+    "scpCodes": [
+      "ABQRS",
+      "ASMI",
+      "CRBBB",
+      "IMI",
+      "STACH"
+    ],
+    "infarctionStages": [
+      "stadium i",
+      "stadium iii"
+    ],
+    "hasMiLocalizationCode": true,
+    "hasSubendocardialInjuryCode": false,
+    "hasAcuteInfarctionStage": true,
+    "hasNonSpecificStElevationCode": false
+  },
+  "status": "pending_review"
+}

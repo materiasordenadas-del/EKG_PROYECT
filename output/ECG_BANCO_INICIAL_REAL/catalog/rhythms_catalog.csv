@@ -36,3 +36,13 @@ vt_s0425,[PRUEBA] Taquicardia ventricular · S0425,VT,164895002,425,S0425,100,10
 vt_s0501,[PRUEBA] Taquicardia ventricular · S0501,VT,164895002,501,S0501,100,10.0,rhythms/vt_s0501/signal.json,candidate,ptb
 vt_s0530,[PRUEBA] Taquicardia ventricular · S0530,VT,164895002,530,S0530,100,10.0,rhythms/vt_s0530/signal.json,candidate,ptb
 vt_s0541,[PRUEBA] Taquicardia ventricular · S0541,VT,164895002,541,S0541,100,10.0,rhythms/vt_s0541/signal.json,candidate,ptb
+stemi_ecg_11839,[PRUEBA] STEMI · ECG 11839,SCA_STEMI,,11839,,100,10.0,rhythms/stemi_ecg_11839/signal.json,candidate,PTB-XL
+stemi_ecg_09543,[PRUEBA] STEMI · ECG 9543,SCA_STEMI,,9543,,100,10.0,rhythms/stemi_ecg_09543/signal.json,candidate,PTB-XL
+stemi_ecg_08792,[PRUEBA] STEMI · ECG 8792,SCA_STEMI,,8792,,100,10.0,rhythms/stemi_ecg_08792/signal.json,candidate,PTB-XL
+stemi_ecg_03582,[PRUEBA] STEMI · ECG 3582,SCA_STEMI,,3582,,100,10.0,rhythms/stemi_ecg_03582/signal.json,candidate,PTB-XL
+stemi_ecg_19935,[PRUEBA] STEMI · ECG 19935,SCA_STEMI,,19935,,100,10.0,rhythms/stemi_ecg_19935/signal.json,candidate,PTB-XL
+nstemi_ecg_01812,[PRUEBA] NSTEMI (patrón ECG compatible) · ECG 1812,SCA_NSTEMI,,1812,,100,10.0,rhythms/nstemi_ecg_01812/signal.json,candidate,PTB-XL
+nstemi_ecg_16463,[PRUEBA] NSTEMI (patrón ECG compatible) · ECG 16463,SCA_NSTEMI,,16463,,100,10.0,rhythms/nstemi_ecg_16463/signal.json,candidate,PTB-XL
+nstemi_ecg_12615,[PRUEBA] NSTEMI (patrón ECG compatible) · ECG 12615,SCA_NSTEMI,,12615,,100,10.0,rhythms/nstemi_ecg_12615/signal.json,candidate,PTB-XL
+nstemi_ecg_07997,[PRUEBA] NSTEMI (patrón ECG compatible) · ECG 7997,SCA_NSTEMI,,7997,,100,10.0,rhythms/nstemi_ecg_07997/signal.json,candidate,PTB-XL
+nstemi_ecg_06751,[PRUEBA] NSTEMI (patrón ECG compatible) · ECG 6751,SCA_NSTEMI,,6751,,100,10.0,rhythms/nstemi_ecg_06751/signal.json,candidate,PTB-XL

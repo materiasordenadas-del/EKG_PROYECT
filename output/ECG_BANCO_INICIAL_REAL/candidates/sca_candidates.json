@@ -1,0 +1,260 @@
+{
+  "schemaVersion": "1.0",
+  "dataset": {
+    "name": "PTB-XL",
+    "version": "1.0.3"
+  },
+  "targets": {
+    "stemi": {
+      "label": "STEMI",
+      "rule": "Código de localización de infarto + estadio agudo I/I-II o STE_; excluye lesión subendocárdica.",
+      "clinicalLimit": "Requiere revisión clínica humana y exclusión de imitadores."
+    },
+    "nstemi": {
+      "label": "NSTEMI (patrón compatible)",
+      "rule": "Código INJ* de lesión subendocárdica sin STE_, marcapasos, WPW ni BRI completo.",
+      "clinicalLimit": "El ECG no confirma NSTEMI; requiere troponina dinámica y contexto clínico."
+    }
+  },
+  "selection": {
+    "candidatesPerGroup": 5,
+    "manualWaveformEditing": false,
+    "reviewRequired": true
+  },
+  "candidates": [
+    {
+      "id": "stemi_ecg_11839",
+      "group": "stemi",
+      "ecgId": 11839,
+      "targetCode": "SCA_STEMI",
+      "selectionScore": 56.75,
+      "evidence": {
+        "scpCodes": [
+          "ILMI",
+          "SR"
+        ],
+        "infarctionStages": [
+          "stadium i"
+        ],
+        "hasMiLocalizationCode": true,
+        "hasSubendocardialInjuryCode": false,
+        "hasAcuteInfarctionStage": true,
+        "hasNonSpecificStElevationCode": false
+      },
+      "status": "pending_review"
+    },
+    {
+      "id": "stemi_ecg_09543",
+      "group": "stemi",
+      "ecgId": 9543,
+      "targetCode": "SCA_STEMI",
+      "selectionScore": 56.0,
+      "evidence": {
+        "scpCodes": [
+          "1AVB",
+          "ASMI",
+          "ISCAL",
+          "SR"
+        ],
+        "infarctionStages": [
+          "stadium i"
+        ],
+        "hasMiLocalizationCode": true,
+        "hasSubendocardialInjuryCode": false,
+        "hasAcuteInfarctionStage": true,
+        "hasNonSpecificStElevationCode": false
+      },
+      "status": "pending_review"
+    },
+    {
+      "id": "stemi_ecg_08792",
+      "group": "stemi",
+      "ecgId": 8792,
+      "targetCode": "SCA_STEMI",
+      "selectionScore": 56.0,
+      "evidence": {
+        "scpCodes": [
+          "1AVB",
+          "ABQRS",
+          "ASMI",
+          "ILMI",
+          "IVCD",
+          "LAFB",
+          "SR"
+        ],
+        "infarctionStages": [
+          "stadium i"
+        ],
+        "hasMiLocalizationCode": true,
+        "hasSubendocardialInjuryCode": false,
+        "hasAcuteInfarctionStage": true,
+        "hasNonSpecificStElevationCode": false
+      },
+      "status": "pending_review"
+    },
+    {
+      "id": "stemi_ecg_03582",
+      "group": "stemi",
+      "ecgId": 3582,
+      "targetCode": "SCA_STEMI",
+      "selectionScore": 56.0,
+      "evidence": {
+        "scpCodes": [
+          "ABQRS",
+          "ASMI",
+          "CRBBB",
+          "IMI",
+          "STACH"
+        ],
+        "infarctionStages": [
+          "stadium i",
+          "stadium iii"
+        ],
+        "hasMiLocalizationCode": true,
+        "hasSubendocardialInjuryCode": false,
+        "hasAcuteInfarctionStage": true,
+        "hasNonSpecificStElevationCode": false
+      },
+      "status": "pending_review"
+    },
+    {
+      "id": "stemi_ecg_19935",
+      "group": "stemi",
+      "ecgId": 19935,
+      "targetCode": "SCA_STEMI",
+      "selectionScore": 56.0,
+      "evidence": {
+        "scpCodes": [
+          "ABQRS",
+          "ASMI",
+          "IMI",
+          "ISCAL",
+          "IVCD",
+          "SR"
+        ],
+        "infarctionStages": [
+          "stadium i"
+        ],
+        "hasMiLocalizationCode": true,
+        "hasSubendocardialInjuryCode": false,
+        "hasAcuteInfarctionStage": true,
+        "hasNonSpecificStElevationCode": false
+      },
+      "status": "pending_review"
+    },
+    {
+      "id": "nstemi_ecg_01812",
+      "group": "nstemi",
+      "ecgId": 1812,
+      "targetCode": "SCA_NSTEMI",
+      "selectionScore": 55.0,
+      "evidence": {
+        "scpCodes": [
+          "INJAL",
+          "INJAS",
+          "SR"
+        ],
+        "infarctionStages": [
+          "unknown"
+        ],
+        "hasMiLocalizationCode": false,
+        "hasSubendocardialInjuryCode": true,
+        "hasAcuteInfarctionStage": false,
+        "hasNonSpecificStElevationCode": false
+      },
+      "status": "pending_review"
+    },
+    {
+      "id": "nstemi_ecg_16463",
+      "group": "nstemi",
+      "ecgId": 16463,
+      "targetCode": "SCA_NSTEMI",
+      "selectionScore": 55.0,
+      "evidence": {
+        "scpCodes": [
+          "INJAL",
+          "INJAS",
+          "SR"
+        ],
+        "infarctionStages": [
+          "unknown"
+        ],
+        "hasMiLocalizationCode": false,
+        "hasSubendocardialInjuryCode": true,
+        "hasAcuteInfarctionStage": false,
+        "hasNonSpecificStElevationCode": false
+      },
+      "status": "pending_review"
+    },
+    {
+      "id": "nstemi_ecg_12615",
+      "group": "nstemi",
+      "ecgId": 12615,
+      "targetCode": "SCA_NSTEMI",
+      "selectionScore": 55.0,
+      "evidence": {
+        "scpCodes": [
+          "INJIL",
+          "INVT",
+          "SR",
+          "STD_"
+        ],
+        "infarctionStages": [
+          "unknown"
+        ],
+        "hasMiLocalizationCode": false,
+        "hasSubendocardialInjuryCode": true,
+        "hasAcuteInfarctionStage": false,
+        "hasNonSpecificStElevationCode": false
+      },
+      "status": "pending_review"
+    },
+    {
+      "id": "nstemi_ecg_07997",
+      "group": "nstemi",
+      "ecgId": 7997,
+      "targetCode": "SCA_NSTEMI",
+      "selectionScore": 50.0,
+      "evidence": {
+        "scpCodes": [
+          "INJAL",
+          "INVT",
+          "LAO/LAE",
+          "SR",
+          "STD_"
+        ],
+        "infarctionStages": [
+          "unknown"
+        ],
+        "hasMiLocalizationCode": false,
+        "hasSubendocardialInjuryCode": true,
+        "hasAcuteInfarctionStage": false,
+        "hasNonSpecificStElevationCode": false
+      },
+      "status": "pending_review"
+    },
+    {
+      "id": "nstemi_ecg_06751",
+      "group": "nstemi",
+      "ecgId": 6751,
+      "targetCode": "SCA_NSTEMI",
+      "selectionScore": 50.0,
+      "evidence": {
+        "scpCodes": [
+          "INJAL",
+          "INJAS",
+          "INJIN",
+          "SR"
+        ],
+        "infarctionStages": [
+          "unknown"
+        ],
+        "hasMiLocalizationCode": false,
+        "hasSubendocardialInjuryCode": true,
+        "hasAcuteInfarctionStage": false,
+        "hasNonSpecificStElevationCode": false
+      },
+      "status": "pending_review"
+    }
+  ]
+}

@@ -387,5 +387,115 @@
     "path": "rhythms/vt_s0541/signal.json",
     "status": "candidate",
     "sourceDataset": "ptb"
+  },
+  {
+    "id": "stemi_ecg_11839",
+    "title": "[PRUEBA] STEMI · ECG 11839",
+    "targetCode": "SCA_STEMI",
+    "ecgId": 11839,
+    "sampleRateHz": 100,
+    "durationSeconds": 10.0,
+    "path": "rhythms/stemi_ecg_11839/signal.json",
+    "status": "candidate",
+    "sourceDataset": "PTB-XL"
+  },
+  {
+    "id": "stemi_ecg_09543",
+    "title": "[PRUEBA] STEMI · ECG 9543",
+    "targetCode": "SCA_STEMI",
+    "ecgId": 9543,
+    "sampleRateHz": 100,
+    "durationSeconds": 10.0,
+    "path": "rhythms/stemi_ecg_09543/signal.json",
+    "status": "candidate",
+    "sourceDataset": "PTB-XL"
+  },
+  {
+    "id": "stemi_ecg_08792",
+    "title": "[PRUEBA] STEMI · ECG 8792",
+    "targetCode": "SCA_STEMI",
+    "ecgId": 8792,
+    "sampleRateHz": 100,
+    "durationSeconds": 10.0,
+    "path": "rhythms/stemi_ecg_08792/signal.json",
+    "status": "candidate",
+    "sourceDataset": "PTB-XL"
+  },
+  {
+    "id": "stemi_ecg_03582",
+    "title": "[PRUEBA] STEMI · ECG 3582",
+    "targetCode": "SCA_STEMI",
+    "ecgId": 3582,
+    "sampleRateHz": 100,
+    "durationSeconds": 10.0,
+    "path": "rhythms/stemi_ecg_03582/signal.json",
+    "status": "candidate",
+    "sourceDataset": "PTB-XL"
+  },
+  {
+    "id": "stemi_ecg_19935",
+    "title": "[PRUEBA] STEMI · ECG 19935",
+    "targetCode": "SCA_STEMI",
+    "ecgId": 19935,
+    "sampleRateHz": 100,
+    "durationSeconds": 10.0,
+    "path": "rhythms/stemi_ecg_19935/signal.json",
+    "status": "candidate",
+    "sourceDataset": "PTB-XL"
+  },
+  {
+    "id": "nstemi_ecg_01812",
+    "title": "[PRUEBA] NSTEMI (patrón ECG compatible) · ECG 1812",
+    "targetCode": "SCA_NSTEMI",
+    "ecgId": 1812,
+    "sampleRateHz": 100,
+    "durationSeconds": 10.0,
+    "path": "rhythms/nstemi_ecg_01812/signal.json",
+    "status": "candidate",
+    "sourceDataset": "PTB-XL"
+  },
+  {
+    "id": "nstemi_ecg_16463",
+    "title": "[PRUEBA] NSTEMI (patrón ECG compatible) · ECG 16463",
+    "targetCode": "SCA_NSTEMI",
+    "ecgId": 16463,
+    "sampleRateHz": 100,
+    "durationSeconds": 10.0,
+    "path": "rhythms/nstemi_ecg_16463/signal.json",
+    "status": "candidate",
+    "sourceDataset": "PTB-XL"
+  },
+  {
+    "id": "nstemi_ecg_12615",
+    "title": "[PRUEBA] NSTEMI (patrón ECG compatible) · ECG 12615",
+    "targetCode": "SCA_NSTEMI",
+    "ecgId": 12615,
+    "sampleRateHz": 100,
+    "durationSeconds": 10.0,
+    "path": "rhythms/nstemi_ecg_12615/signal.json",
+    "status": "candidate",
+    "sourceDataset": "PTB-XL"
+  },
+  {
+    "id": "nstemi_ecg_07997",
+    "title": "[PRUEBA] NSTEMI (patrón ECG compatible) · ECG 7997",
+    "targetCode": "SCA_NSTEMI",
+    "ecgId": 7997,
+    "sampleRateHz": 100,
+    "durationSeconds": 10.0,
+    "path": "rhythms/nstemi_ecg_07997/signal.json",
+    "status": "candidate",
+    "sourceDataset": "PTB-XL"
+  },
+  {
+    "id": "nstemi_ecg_06751",
+    "title": "[PRUEBA] NSTEMI (patrón ECG compatible) · ECG 6751",
+    "targetCode": "SCA_NSTEMI",
+    "ecgId": 6751,
+    "sampleRateHz": 100,
+    "durationSeconds": 10.0,
+    "path": "rhythms/nstemi_ecg_06751/signal.json",
+    "status": "candidate",
+    "sourceDataset": "PTB-XL"
   }
 ]

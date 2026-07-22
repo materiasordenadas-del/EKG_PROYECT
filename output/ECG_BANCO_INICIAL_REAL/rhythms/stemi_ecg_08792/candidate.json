@@ -1,0 +1,26 @@
+{
+  "id": "stemi_ecg_08792",
+  "group": "stemi",
+  "ecgId": 8792,
+  "targetCode": "SCA_STEMI",
+  "selectionScore": 56.0,
+  "evidence": {
+    "scpCodes": [
+      "1AVB",
+      "ABQRS",
+      "ASMI",
+      "ILMI",
+      "IVCD",
+      "LAFB",
+      "SR"
+    ],
+    "infarctionStages": [
+      "stadium i"
+    ],
+    "hasMiLocalizationCode": true,
+    "hasSubendocardialInjuryCode": false,
+    "hasAcuteInfarctionStage": true,
+    "hasNonSpecificStElevationCode": false
+  },
+  "status": "pending_review"
+}

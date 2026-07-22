@@ -1,0 +1,23 @@
+{
+  "id": "nstemi_ecg_12615",
+  "group": "nstemi",
+  "ecgId": 12615,
+  "targetCode": "SCA_NSTEMI",
+  "selectionScore": 55.0,
+  "evidence": {
+    "scpCodes": [
+      "INJIL",
+      "INVT",
+      "SR",
+      "STD_"
+    ],
+    "infarctionStages": [
+      "unknown"
+    ],
+    "hasMiLocalizationCode": false,
+    "hasSubendocardialInjuryCode": true,
+    "hasAcuteInfarctionStage": false,
+    "hasNonSpecificStElevationCode": false
+  },
+  "status": "pending_review"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "nstemi_ecg_07997",
+  "group": "nstemi",
+  "ecgId": 7997,
+  "targetCode": "SCA_NSTEMI",
+  "selectionScore": 50.0,
+  "evidence": {
+    "scpCodes": [
+      "INJAL",
+      "INVT",
+      "LAO/LAE",
+      "SR",
+      "STD_"
+    ],
+    "infarctionStages": [
+      "unknown"
+    ],
+    "hasMiLocalizationCode": false,
+    "hasSubendocardialInjuryCode": true,
+    "hasAcuteInfarctionStage": false,
+    "hasNonSpecificStElevationCode": false
+  },
+  "status": "pending_review"
+}

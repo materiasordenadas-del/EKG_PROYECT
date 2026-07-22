@@ -1,0 +1,23 @@
+{
+  "id": "stemi_ecg_09543",
+  "group": "stemi",
+  "ecgId": 9543,
+  "targetCode": "SCA_STEMI",
+  "selectionScore": 56.0,
+  "evidence": {
+    "scpCodes": [
+      "1AVB",
+      "ASMI",
+      "ISCAL",
+      "SR"
+    ],
+    "infarctionStages": [
+      "stadium i"
+    ],
+    "hasMiLocalizationCode": true,
+    "hasSubendocardialInjuryCode": false,
+    "hasAcuteInfarctionStage": true,
+    "hasNonSpecificStElevationCode": false
+  },
+  "status": "pending_review"
+}
